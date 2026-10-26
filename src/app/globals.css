@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root, [data-theme='dark'] {
+  --bg: 5 7 15; --panel: 14 21 48; --edge: 34 44 92; --ink: 226 232 255; --mute: 138 150 190;
+  --accent: 34 230 255; --accent2: 164 123 255; --ok: 74 222 128; --bad: 251 113 133;
+  color-scheme: dark;
+}
+[data-theme='light'] {
+  --bg: 238 242 251; --panel: 255 255 255; --edge: 196 205 232; --ink: 11 18 48; --mute: 85 98 140;
+  --accent: 8 145 178; --accent2: 109 40 217; --ok: 21 128 61; --bad: 190 18 60;
+  color-scheme: light;
+}
+html { background: rgb(var(--bg)); }
+body {
+  color: rgb(var(--ink)); min-height: 100vh;
+  background-image:
+    radial-gradient(900px 500px at 15% -10%, rgb(var(--accent2) / .16), transparent 60%),
+    radial-gradient(800px 480px at 95% 0%, rgb(var(--accent) / .12), transparent 55%),
+    linear-gradient(rgb(var(--edge) / .18) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--edge) / .18) 1px, transparent 1px);
+  background-size: auto, auto, 44px 44px, 44px 44px;
+  background-attachment: fixed;
+}
+:focus-visible { outline: 2px solid rgb(var(--accent)); outline-offset: 2px; border-radius: 6px; }
+
+@layer components {
+  .card { @apply rounded-2xl border border-edge bg-panel/80 backdrop-blur-sm; }
+  .card-glow { @apply card shadow-neon; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-40; }
+  .btn-primary { @apply btn bg-accent text-bg hover:brightness-110 shadow-neon; }
+  .btn-ghost { @apply btn border border-edge bg-panel/60 text-ink hover:border-accent/60; }
+  .btn-violet { @apply btn bg-accent2 text-white hover:brightness-110; }
+  .chip { @apply inline-flex items-center rounded-full border border-edge px-2.5 py-0.5 text-xs font-medium text-mute; }
+  .h-label { @apply text-xs font-semibold uppercase tracking-[0.2em] text-accent; }
+}
+
+/* Animations are opt-out: the app sets data-motion="off" from Settings or from prefers-reduced-motion. */
+[data-motion='off'] *, [data-motion='off'] *::before, [data-motion='off'] *::after { animation: none !important; transition: none !important; }
+@media (prefers-reduced-motion: reduce) { * { animation-duration: .001ms !important; transition-duration: .001ms !important; } }
+
+@keyframes shake { 10%, 90% { transform: translateX(-2px); } 30%, 70% { transform: translateX(-5px); } 50% { transform: translateX(5px); } }
+.shake { animation: shake .45s ease; }
+@keyframes pulseGlow { 0%,100% { box-shadow: 0 0 0 1px rgb(var(--accent)/.35), 0 0 12px rgb(var(--accent)/.15);} 50% { box-shadow: 0 0 0 1px rgb(var(--accent)/.6), 0 0 28px rgb(var(--accent)/.35);} }
+.pulse-glow { animation: pulseGlow 2.4s ease-in-out infinite; }

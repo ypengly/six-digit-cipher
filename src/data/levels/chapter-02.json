@@ -1,0 +1,1396 @@
+[
+  {
+    "id": "L021",
+    "number": 21,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Prime Pairs",
+    "difficulty": "Intermediate",
+    "category": "Primes",
+    "story": "Three prime numbers are etched into the vault wall.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: the 10th prime number (2 is the 1st).",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: the largest prime below 50.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the smallest prime above 90.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "294797",
+    "explanation": "2,3,5,7,11,13,17,19,23,29: the 10th is 29. 49 = 7x7, so 47 is the largest prime below 50. 91 = 7x13, 92 to 96 are composite, so 97. The code is 294797.",
+    "steps": [
+      "2,3,5,7,11,13,17,19,23,29: the 10th is 29.",
+      "49 = 7x7, so 47 is the largest prime below 50.",
+      "91 = 7x13, 92 to 96 are composite, so 97."
+    ],
+    "hints": [
+      "List primes in order: 2, 3, 5, 7, 11, ...",
+      "The 10th prime is 29. Check 49 and 48 for the second clue, and 91, 92... for the third.",
+      "Near the end: the code starts with 29 and ends with 7. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 150,
+    "skills": [
+      "Primes"
+    ],
+    "tags": [
+      "primes",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "294797",
+        "correct": true
+      },
+      {
+        "code": "294798",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L022",
+    "number": 22,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Reflected Sums",
+    "difficulty": "Intermediate",
+    "category": "Reversed digits",
+    "story": "The vault displays a number and its reflection.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The last pair is the first pair with its digits reversed.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The middle pair is the sum of the first pair and the last pair.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The first pair is a multiple of 7 whose digits add up to 8.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "358853",
+    "explanation": "Multiples of 7: ..., 28, 35, 42, ... Only 35 has digits adding to 8. Reversed: 53. Sum: 35 + 53 = 88. Code: 35 88 53. The code is 358853.",
+    "steps": [
+      "Multiples of 7: ..., 28, 35, 42, ... Only 35 has digits adding to 8.",
+      "Reversed: 53. Sum: 35 + 53 = 88.",
+      "Code: 35 88 53."
+    ],
+    "hints": [
+      "List the two-digit multiples of 7 and check their digit sums.",
+      "Only one multiple of 7 has digit sum 8. Reverse it, then add.",
+      "Near the end: the code starts with 35 and ends with 3. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 156,
+    "skills": [
+      "Reversed digits"
+    ],
+    "tags": [
+      "reversed digits",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "358853",
+        "correct": true
+      },
+      {
+        "code": "358854",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L023",
+    "number": 23,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Remainders",
+    "difficulty": "Intermediate",
+    "category": "Modular arithmetic",
+    "story": "Each pair of the lock reacts to remainders.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The first pair leaves remainder 3 when divided by 7, is odd, and lies between 50 and 60.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The middle pair leaves remainder 4 when divided by 9, is a multiple of 5, and is below 50.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The last pair leaves remainder 5 when divided by 12 and lies between 20 and 40.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "594029",
+    "explanation": "Between 50 and 60 with remainder 3 mod 7: 52, 59. Odd leaves 59. Multiples of 5 below 50 with remainder 4 mod 9: 40. 5 mod 12 between 20 and 40: 29. The code is 594029.",
+    "steps": [
+      "Between 50 and 60 with remainder 3 mod 7: 52, 59. Odd leaves 59.",
+      "Multiples of 5 below 50 with remainder 4 mod 9: 40.",
+      "5 mod 12 between 20 and 40: 29."
+    ],
+    "hints": [
+      "Take one pair at a time and list candidates.",
+      "Numbers with remainder 5 mod 12 are 5, 17, 29, 41. For mod 9 remainder 4: 4, 13, 22, 31, 40, 49.",
+      "Near the end: the code starts with 59 and ends with 9. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 162,
+    "skills": [
+      "Modular arithmetic"
+    ],
+    "tags": [
+      "modular arithmetic",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "594029",
+        "correct": true
+      },
+      {
+        "code": "594020",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L024",
+    "number": 24,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Last Train",
+    "difficulty": "Intermediate",
+    "category": "Clock logic",
+    "story": "A departure board is the only clue in the vault.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The train leaves at 09:45 and the journey takes 3 hours 50 minutes.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The first pair is the arrival hour on a 24-hour clock.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The middle pair is the arrival minute.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "The last pair is the last two digits of the journey length in minutes.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "133530",
+    "explanation": "09:45 + 3:50 = 13:35. Journey: 230 minutes, so the last two digits are 30. The code is 133530.",
+    "steps": [
+      "09:45 + 3:50 = 13:35.",
+      "Journey: 230 minutes, so the last two digits are 30."
+    ],
+    "hints": [
+      "Add the hours and minutes separately, then carry.",
+      "9:45 + 3:50: 45 + 50 = 95 minutes = 1 hour 35. The journey is 3 x 60 + 50 minutes.",
+      "Near the end: the code starts with 13 and ends with 0. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 168,
+    "skills": [
+      "Clock logic"
+    ],
+    "tags": [
+      "clock logic",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "133530",
+        "correct": true
+      },
+      {
+        "code": "133531",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L025",
+    "number": 25,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "The Fourth Monday",
+    "difficulty": "Intermediate",
+    "category": "Calendar",
+    "story": "A torn calendar page has only one clue: the 5th of this 30-day month is a Monday.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: the date of the 4th Monday.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: the date of the last Friday.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the number of Mondays in the month.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "263004",
+    "explanation": "Mondays: 5, 12, 19, 26: the 4th is 26. Fridays: 2, 9, 16, 23, 30: the last is 30. Four Mondays: 04. The code is 263004.",
+    "steps": [
+      "Mondays: 5, 12, 19, 26: the 4th is 26.",
+      "Fridays: 2, 9, 16, 23, 30: the last is 30.",
+      "Four Mondays: 04."
+    ],
+    "hints": [
+      "If the 5th is a Monday, so is every date 7 days later (and earlier).",
+      "Mondays: 5, 12, 19, 26. Fridays fall 4 days after Mondays.",
+      "Near the end: the code starts with 26 and ends with 4. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 174,
+    "skills": [
+      "Calendar"
+    ],
+    "tags": [
+      "calendar",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "263004",
+        "correct": true
+      },
+      {
+        "code": "263005",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L026",
+    "number": 26,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Letter Values",
+    "difficulty": "Intermediate",
+    "category": "Letter encoding",
+    "story": "The vault speaks in letters, but listens in numbers. A = 1, B = 2, ... Z = 26.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: the sum of the letter values of DOG.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: the sum of the letter values of CAT.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the first pair minus the middle pair.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "262402",
+    "explanation": "DOG = 4 + 15 + 7 = 26. CAT = 3 + 1 + 20 = 24. Difference: 2, written 02. The code is 262402.",
+    "steps": [
+      "DOG = 4 + 15 + 7 = 26.",
+      "CAT = 3 + 1 + 20 = 24.",
+      "Difference: 2, written 02."
+    ],
+    "hints": [
+      "Convert each letter to its position in the alphabet.",
+      "D=4, O=15, G=7. C=3, A=1, T=20.",
+      "Near the end: the code starts with 26 and ends with 2. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 180,
+    "skills": [
+      "Letter encoding"
+    ],
+    "tags": [
+      "letter encoding",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "262402",
+        "correct": true
+      },
+      {
+        "code": "262403",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L027",
+    "number": 27,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "If and Only If",
+    "difficulty": "Intermediate",
+    "category": "Conditionals",
+    "story": "Each guard on the wall has a conditional statement.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The first two digits add up to 9 and multiply to 14.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "If the first digit is larger than the second, the third digit is 0. Otherwise the third digit is 5.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The second digit is odd.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "The fourth digit is the third digit minus the first digit.",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "The last three digits count down by one, starting from the fourth digit.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "275321",
+    "explanation": "2 and 7 fit; the second digit is odd, so the first two are 2, 7. 2 < 7, so the third digit is 5. Fourth: 5 - 2 = 3, then 2, 1. Code: 275321. The code is 275321.",
+    "steps": [
+      "2 and 7 fit; the second digit is odd, so the first two are 2, 7.",
+      "2 < 7, so the third digit is 5.",
+      "Fourth: 5 - 2 = 3, then 2, 1. Code: 275321."
+    ],
+    "hints": [
+      "Which pairs of digits add to 9 and multiply to 14?",
+      "The pair is 2 and 7 in some order. The odd second digit settles the order.",
+      "Near the end: the code starts with 27 and ends with 1. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 186,
+    "skills": [
+      "Conditionals"
+    ],
+    "tags": [
+      "conditionals",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "275321",
+        "correct": true
+      },
+      {
+        "code": "275322",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L028",
+    "number": 28,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Photo Finish",
+    "difficulty": "Intermediate",
+    "category": "Ordering",
+    "story": "Six runners are numbered 1 to 6. The code lists the runners in finishing order, first to last.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Each runner 1 to 6 appears exactly once.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Runner 4 won the race.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Runner 2 finished immediately before runner 6.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "Runner 5 finished ahead of runner 2.",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "Runner 6 finished ahead of runner 1, who finished ahead of runner 3.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "452613",
+    "explanation": "Runner 4 is first. Chain: 5 before (2 6) before 1 before 3. Finishing order: 4 5 2 6 1 3. The code is 452613.",
+    "steps": [
+      "Runner 4 is first.",
+      "Chain: 5 before (2 6) before 1 before 3.",
+      "Finishing order: 4 5 2 6 1 3."
+    ],
+    "hints": [
+      "Glue runners 2 and 6 together as one block.",
+      "Order the blocks: 5, then the 2-6 block, then 1, then 3.",
+      "Near the end: the code starts with 45 and ends with 3. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 192,
+    "skills": [
+      "Ordering"
+    ],
+    "tags": [
+      "ordering",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "452613",
+        "correct": true
+      },
+      {
+        "code": "452614",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L029",
+    "number": 29,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Two Truths and a Twist",
+    "difficulty": "Intermediate",
+    "category": "Contradictory clues",
+    "story": "Two guards speak. One of the statements looks impossible.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Exactly one of these statements is true: (A) the first digit is 7; (B) the first digit is odd.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The first digit is a prime number.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The first two digits add up to 10, and the second is four more than the first.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "The third digit is the second digit minus the first digit.",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "The code reads the same forwards and backwards.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "374473",
+    "explanation": "The first digit is odd, not 7, and prime: 3 or 5. Sum 10 with second = first + 4: 3 and 7. Third: 7 - 3 = 4. Palindrome: 374473. The code is 374473.",
+    "steps": [
+      "The first digit is odd, not 7, and prime: 3 or 5.",
+      "Sum 10 with second = first + 4: 3 and 7.",
+      "Third: 7 - 3 = 4. Palindrome: 374473."
+    ],
+    "hints": [
+      "If the first digit is 7, both statements A and B are true. Is that allowed?",
+      "Exactly one true means the first digit is odd but not 7.",
+      "Near the end: the code starts with 37 and ends with 3. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 198,
+    "skills": [
+      "Contradictory clues"
+    ],
+    "tags": [
+      "contradictory clues",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "374473",
+        "correct": true
+      },
+      {
+        "code": "374474",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L030",
+    "number": 30,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Factor Tree",
+    "difficulty": "Intermediate",
+    "category": "Prime factorisation",
+    "story": "A tree of factors grows from the number 360.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The first three digits are the number 360.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The last three digits are the exponents of 2, 3 and 5 in the prime factorisation of 360, in that order.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "360321",
+    "explanation": "360 = 2^3 x 3^2 x 5^1. Code: 360 then 3, 2, 1. The code is 360321.",
+    "steps": [
+      "360 = 2^3 x 3^2 x 5^1.",
+      "Code: 360 then 3, 2, 1."
+    ],
+    "hints": [
+      "Divide 360 by 2 until you cannot, then by 3, then by 5.",
+      "360 = 8 x 45 = 8 x 9 x 5.",
+      "Near the end: the code starts with 36 and ends with 1. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 204,
+    "skills": [
+      "Prime factorisation"
+    ],
+    "tags": [
+      "prime factorisation",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "360321",
+        "correct": true
+      },
+      {
+        "code": "360322",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L031",
+    "number": 31,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Reverse and Add",
+    "difficulty": "Intermediate",
+    "category": "Reversed digits",
+    "story": "The vault runs an old routine: take a number, reverse it and add.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Start with 58. Reverse it and add. Repeat on the result until you get a palindrome.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The first three digits are the palindrome you reach.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The last three digits are the number of additions you made, with leading zeros.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "484002",
+    "explanation": "58 + 85 = 143; 143 + 341 = 484. That took 2 additions: 002. The code is 484002.",
+    "steps": [
+      "58 + 85 = 143; 143 + 341 = 484.",
+      "That took 2 additions: 002."
+    ],
+    "hints": [
+      "Do the first addition: 58 + 85.",
+      "143 is not a palindrome. Reverse it and add again.",
+      "Near the end: the code starts with 48 and ends with 2. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 210,
+    "skills": [
+      "Reversed digits"
+    ],
+    "tags": [
+      "reversed digits",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "484002",
+        "correct": true
+      },
+      {
+        "code": "484003",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L032",
+    "number": 32,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Weekday Arithmetic",
+    "difficulty": "Intermediate",
+    "category": "Modular arithmetic",
+    "story": "Days are numbered Monday = 1 up to Sunday = 7.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: the weekday number 100 days after a Wednesday.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: the weekday number 365 days after a Sunday.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the weekday number 1000 days before a Friday.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "050106",
+    "explanation": "100 days after Wednesday: 5. 365 days after Sunday: 1. 1000 days before Friday: 6. The code is 050106.",
+    "steps": [
+      "100 days after Wednesday: 5.",
+      "365 days after Sunday: 1.",
+      "1000 days before Friday: 6."
+    ],
+    "hints": [
+      "Weekdays repeat every 7 days, so only the remainder mod 7 matters.",
+      "100 mod 7 = 2, 365 mod 7 = 1, 1000 mod 7 = 6.",
+      "Near the end: the code starts with 05 and ends with 6. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 216,
+    "skills": [
+      "Modular arithmetic"
+    ],
+    "tags": [
+      "modular arithmetic",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "050106",
+        "correct": true
+      },
+      {
+        "code": "050107",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L033",
+    "number": 33,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Keyed Word",
+    "difficulty": "Intermediate",
+    "category": "Letter encoding",
+    "story": "A key table translates letters to digits: E=1, N=2, C=3, R=4, Y=5, P=6, T=7.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The code spells the word ENTREE using the key table.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "127411",
+    "explanation": "ENTREE becomes 127411. The code is 127411.",
+    "steps": [
+      "ENTREE becomes 127411."
+    ],
+    "hints": [
+      "Translate letter by letter.",
+      "E=1, N=2, T=7, R=4, E=1, E=1.",
+      "Near the end: the code starts with 12 and ends with 1. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 222,
+    "skills": [
+      "Letter encoding"
+    ],
+    "tags": [
+      "letter encoding",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "127411",
+        "correct": true
+      },
+      {
+        "code": "127412",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L034",
+    "number": 34,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Sum and Difference",
+    "difficulty": "Intermediate",
+    "category": "Algebra",
+    "story": "The vault shows two sealed numbers and their relationships.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The first pair plus the middle pair equals 100.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The first pair minus the middle pair equals 36.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The last pair is the last two digits of the product of the first and middle pairs.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "683276",
+    "explanation": "First = 68, middle = 32. 68 x 32 = 2176, so the last pair is 76. The code is 683276.",
+    "steps": [
+      "First = 68, middle = 32.",
+      "68 x 32 = 2176, so the last pair is 76."
+    ],
+    "hints": [
+      "Add the two equations.",
+      "Adding gives 2 x first = 136.",
+      "Near the end: the code starts with 68 and ends with 6. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 228,
+    "skills": [
+      "Algebra"
+    ],
+    "tags": [
+      "algebra",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "683276",
+        "correct": true
+      },
+      {
+        "code": "683277",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L035",
+    "number": 35,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Fractions of Things",
+    "difficulty": "Intermediate",
+    "category": "Fractions",
+    "story": "Three sealed jars hold fractions of quantities.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: three eighths of 64.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: 40 percent of 95.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: one seventh of 343.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "243849",
+    "explanation": "3 x 8 = 24. 2 x 19 = 38. 343 / 7 = 49. The code is 243849.",
+    "steps": [
+      "3 x 8 = 24.",
+      "2 x 19 = 38.",
+      "343 / 7 = 49."
+    ],
+    "hints": [
+      "Divide first, then multiply.",
+      "64 / 8 = 8 and 95 / 5 = 19.",
+      "Near the end: the code starts with 24 and ends with 9. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 234,
+    "skills": [
+      "Fractions"
+    ],
+    "tags": [
+      "fractions",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "243849",
+        "correct": true
+      },
+      {
+        "code": "243840",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L036",
+    "number": 36,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Bus Route",
+    "difficulty": "Intermediate",
+    "category": "Word problems",
+    "story": "A bus starts with 12 passengers. At stop 1, 5 get off and 8 get on. At stop 2, 9 get off and 3 get on. At stop 3, 2 get off and 14 get on.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The three pairs are the number of passengers after stops 1, 2 and 3.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "150921",
+    "explanation": "Totals: 15, 9, 21. The code is 150921.",
+    "steps": [
+      "Totals: 15, 9, 21."
+    ],
+    "hints": [
+      "Update the running total after each stop.",
+      "Subtract those getting off, add those getting on.",
+      "Near the end: the code starts with 15 and ends with 1. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 240,
+    "skills": [
+      "Word problems"
+    ],
+    "tags": [
+      "word problems",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "150921",
+        "correct": true
+      },
+      {
+        "code": "150922",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L037",
+    "number": 37,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Latin Square",
+    "difficulty": "Intermediate",
+    "category": "Constraint grids",
+    "story": "A 3 x 3 grid must contain 1, 2 and 3 once in every row and column.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Fill the blanks (marked _) so each row and each column contains 1, 2 and 3 once.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The code is the six blanks read left to right, top to bottom.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [
+      {
+        "title": "Grid",
+        "lines": [
+          "1 _ _",
+          "_ 3 _",
+          "_ _ 2"
+        ]
+      }
+    ],
+    "answer": "232131",
+    "explanation": "Top row: 1, 2, 3 (the 3 can't sit above the central 3). Middle row: 2, 3, 1. Bottom row: 3, 1, 2. Blanks in order: 2, 3, 2, 1, 3, 1. The code is 232131.",
+    "steps": [
+      "Top row: 1, 2, 3 (the 3 can't sit above the central 3).",
+      "Middle row: 2, 3, 1. Bottom row: 3, 1, 2.",
+      "Blanks in order: 2, 3, 2, 1, 3, 1."
+    ],
+    "hints": [
+      "The first row already has a 1. What can the middle cell of the top row be if the centre is 3?",
+      "The top row needs 2 and 3. The column through the centre contains a 3.",
+      "Near the end: the code starts with 23 and ends with 1. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 246,
+    "skills": [
+      "Constraint grids"
+    ],
+    "tags": [
+      "constraint grids",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "232131",
+        "correct": true
+      },
+      {
+        "code": "232132",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L038",
+    "number": 38,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Mirror Primes",
+    "difficulty": "Intermediate",
+    "category": "Primes",
+    "story": "Some primes stay prime in the mirror: 13 and 31, 17 and 71.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "An emirp is a prime that is a different prime when its digits are reversed.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "First pair: the largest two-digit emirp below 90.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Middle pair: the smallest emirp above 30.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "Last pair: the first pair minus the middle pair.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "793148",
+    "explanation": "The largest emirp below 90 is 79. The smallest above 30 is 31. 79 - 31 = 48. The code is 793148.",
+    "steps": [
+      "The largest emirp below 90 is 79.",
+      "The smallest above 30 is 31.",
+      "79 - 31 = 48."
+    ],
+    "hints": [
+      "Start at 89 and walk downward, testing the reversal.",
+      "89 reversed is 98, which is even. Keep going.",
+      "Near the end: the code starts with 79 and ends with 8. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 252,
+    "skills": [
+      "Primes"
+    ],
+    "tags": [
+      "primes",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "793148",
+        "correct": true
+      },
+      {
+        "code": "793149",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L039",
+    "number": 39,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "Balance Scale",
+    "difficulty": "Intermediate",
+    "category": "Algebra",
+    "story": "A scale shows animals balancing against each other.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "A cat weighs as much as three mice.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "A dog weighs as much as two cats.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "One dog, one cat and one mouse together weigh 70 grams.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "The code lists the weight of a mouse, a cat and a dog in grams, as pairs.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "072142",
+    "explanation": "1 mouse = 7 g, cat = 21 g, dog = 42 g. The code is 072142.",
+    "steps": [
+      "1 mouse = 7 g, cat = 21 g, dog = 42 g."
+    ],
+    "hints": [
+      "Measure everything in mice.",
+      "Dog = 6 mice, cat = 3 mice, mouse = 1 mouse, so 10 mice = 70 g.",
+      "Near the end: the code starts with 07 and ends with 2. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 258,
+    "skills": [
+      "Algebra"
+    ],
+    "tags": [
+      "algebra",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "072142",
+        "correct": true
+      },
+      {
+        "code": "072143",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L040",
+    "number": 40,
+    "chapter": 2,
+    "chapterTitle": "The Analyst",
+    "title": "The Analyst's Gate",
+    "difficulty": "Intermediate",
+    "category": "Multi-clue deduction",
+    "story": "Chapter two closes with a gate that tests primes, squares and differences together.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The first pair and its reversal are both prime, they add up to 110, and the first pair is greater than 50.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The middle pair is a multiple of 7, one less than a perfect square, and greater than 40.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The last pair is the first pair minus the middle pair.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "736310",
+    "explanation": "11 x (a + b) = 110 so a + b = 10; prime pairs: 37/73. Greater than 50: 73. n^2 - 1 divisible by 7 and above 40: 63 (=64-1). 73 - 63 = 10. Code: 73 63 10. The code is 736310.",
+    "steps": [
+      "11 x (a + b) = 110 so a + b = 10; prime pairs: 37/73. Greater than 50: 73.",
+      "n^2 - 1 divisible by 7 and above 40: 63 (=64-1).",
+      "73 - 63 = 10. Code: 73 63 10."
+    ],
+    "hints": [
+      "A number and its reversal add to 11 times the digit sum.",
+      "The digits of the first pair add up to 10. Candidates: 37 and 73.",
+      "Near the end: the code starts with 73 and ends with 0. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 264,
+    "skills": [
+      "Multi-clue deduction"
+    ],
+    "tags": [
+      "multi-clue deduction",
+      "the analyst"
+    ],
+    "tests": [
+      {
+        "code": "736310",
+        "correct": true
+      },
+      {
+        "code": "736311",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  }
+]

@@ -1,0 +1,1375 @@
+[
+  {
+    "id": "L001",
+    "number": 1,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "The Three Signals",
+    "difficulty": "Beginner",
+    "category": "Basic facts",
+    "story": "An encrypted vault flickers to life and shows three signals.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: the number of sides on a hexagon, followed by the number of sides on a square.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: the smallest two-digit prime number.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the number of hours on a clock face, minus six.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "641106",
+    "explanation": "A hexagon has 6 sides and a square has 4, so the first pair is 64. The smallest two-digit prime is 11. 12 - 6 = 6, written as 06. The code is 641106.",
+    "steps": [
+      "A hexagon has 6 sides and a square has 4, so the first pair is 64.",
+      "The smallest two-digit prime is 11.",
+      "12 - 6 = 6, written as 06."
+    ],
+    "hints": [
+      "Each clue describes one pair of digits, left to right.",
+      "A hexagon has 6 sides and a square has 4. A clock face shows 12 hours. A single digit such as 6 is written 06.",
+      "Near the end: the code starts with 64 and ends with 6. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 90,
+    "skills": [
+      "Basic facts"
+    ],
+    "tags": [
+      "basic facts",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "641106",
+        "correct": true
+      },
+      {
+        "code": "641107",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L002",
+    "number": 2,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Seven Steps",
+    "difficulty": "Beginner",
+    "category": "Sequences",
+    "story": "A counter on the wall freezes mid-count.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The panel shows 7, 14, 21, 28. The code is the next three terms written as three pairs.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "354249",
+    "explanation": "The sequence rises by 7 each step. The next three terms are 35, 42 and 49. The code is 354249.",
+    "steps": [
+      "The sequence rises by 7 each step.",
+      "The next three terms are 35, 42 and 49."
+    ],
+    "hints": [
+      "What is added each time?",
+      "The sequence rises by 7. Continue it three more times and write each term as a pair.",
+      "Near the end: the code starts with 35 and ends with 9. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 96,
+    "skills": [
+      "Sequences"
+    ],
+    "tags": [
+      "sequences",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "354249",
+        "correct": true
+      },
+      {
+        "code": "354240",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L003",
+    "number": 3,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Odd One Out",
+    "difficulty": "Beginner",
+    "category": "Odd-one-out",
+    "story": "Five numbered tiles hang on the door. One does not belong.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Tiles: 16, 25, 36, 52, 49. The first pair is the tile that does not belong.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The middle pair is the digit sum of that tile, written with two digits.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The last pair is the number of tiles.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "520705",
+    "explanation": "Perfect squares: 16, 25, 36, 49. 52 is not a square. Digit sum of 52 is 7, written 07. There are 5 tiles, written 05. The code is 520705.",
+    "steps": [
+      "Perfect squares: 16, 25, 36, 49. 52 is not a square.",
+      "Digit sum of 52 is 7, written 07.",
+      "There are 5 tiles, written 05."
+    ],
+    "hints": [
+      "Four tiles share a property. Which one breaks it?",
+      "Four of the tiles are perfect squares. Add the two digits of the odd tile, then count all the tiles.",
+      "Near the end: the code starts with 52 and ends with 5. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 102,
+    "skills": [
+      "Odd-one-out"
+    ],
+    "tags": [
+      "odd-one-out",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "520705",
+        "correct": true
+      },
+      {
+        "code": "520706",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L004",
+    "number": 4,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Matching Pairs",
+    "difficulty": "Beginner",
+    "category": "Digit sums",
+    "story": "Three identical keypads sit side by side.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The three pairs of digits are identical.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "All six digits add up to 18.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The first digit is two more than the second digit.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "424242",
+    "explanation": "The code looks like ababab, so 3 x (a + b) = 18 and a + b = 6. Also a = b + 2, so b = 2 and a = 4. The code is 424242. The code is 424242.",
+    "steps": [
+      "The code looks like ababab, so 3 x (a + b) = 18 and a + b = 6.",
+      "Also a = b + 2, so b = 2 and a = 4.",
+      "The code is 424242."
+    ],
+    "hints": [
+      "If every pair is the same, you only need to find one pair.",
+      "Call the pair \"ab\". Then three times (a + b) is 18.",
+      "Near the end: the code starts with 42 and ends with 2. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 108,
+    "skills": [
+      "Digit sums"
+    ],
+    "tags": [
+      "digit sums",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "424242",
+        "correct": true
+      },
+      {
+        "code": "424243",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L005",
+    "number": 5,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Shape Census",
+    "difficulty": "Beginner",
+    "category": "Counting",
+    "story": "Rows of glowing glyphs scroll across the panel.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The first pair is the number of triangles (▲).",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The middle pair is the number of squares (■).",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The last pair is the number of circles (●).",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [
+      {
+        "title": "Glyph rows",
+        "lines": [
+          "▲ ■ ● ▲ ▲",
+          "■ ● ▲ ■ ■",
+          "▲ ● ● ▲ ■ ▲"
+        ]
+      }
+    ],
+    "answer": "070504",
+    "explanation": "Triangles: 7, squares: 5, circles: 4. The code is 070504.",
+    "steps": [
+      "Triangles: 7, squares: 5, circles: 4."
+    ],
+    "hints": [
+      "Count one kind of shape at a time.",
+      "Go row by row and keep a running total for each shape. Write single-digit totals with a leading zero.",
+      "Near the end: the code starts with 07 and ends with 4. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 114,
+    "skills": [
+      "Counting"
+    ],
+    "tags": [
+      "counting",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "070504",
+        "correct": true
+      },
+      {
+        "code": "070505",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L006",
+    "number": 6,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Three Riddles",
+    "difficulty": "Beginner",
+    "category": "Riddles",
+    "story": "The vault asks three questions before it will listen.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: \"I have an extra day only every four years. How many days am I in February then?\"",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: \"How many letters are in the word VAULT?\"",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: \"How many colours are in a rainbow?\"",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "290507",
+    "explanation": "29 days in a leap-year February. V-A-U-L-T has 5 letters: 05. A rainbow has 7 colours: 07. The code is 290507.",
+    "steps": [
+      "29 days in a leap-year February.",
+      "V-A-U-L-T has 5 letters: 05.",
+      "A rainbow has 7 colours: 07."
+    ],
+    "hints": [
+      "These are three small facts, one per pair.",
+      "A leap-year February has 29 days. VAULT has 5 letters, so write 05.",
+      "Near the end: the code starts with 29 and ends with 7. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 120,
+    "skills": [
+      "Riddles"
+    ],
+    "tags": [
+      "riddles",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "290507",
+        "correct": true
+      },
+      {
+        "code": "290508",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L007",
+    "number": 7,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Up Three, Down One",
+    "difficulty": "Beginner",
+    "category": "Sequences",
+    "story": "The keypad lights flash in a strange rhythm.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The first digit is the number of wheels on a bicycle.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Each later digit is 3 more than the digit before it, then 1 less, then 3 more, alternating (+3, -1, +3, -1, +3).",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "254769",
+    "explanation": "A bicycle has 2 wheels. 2, 5, 4, 7, 6, 9. The code is 254769.",
+    "steps": [
+      "A bicycle has 2 wheels.",
+      "2, 5, 4, 7, 6, 9."
+    ],
+    "hints": [
+      "Find the first digit, then follow the rule.",
+      "Start at 2. Add 3, subtract 1, and keep alternating for five steps.",
+      "Near the end: the code starts with 25 and ends with 9. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 126,
+    "skills": [
+      "Sequences"
+    ],
+    "tags": [
+      "sequences",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "254769",
+        "correct": true
+      },
+      {
+        "code": "254760",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L008",
+    "number": 8,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "The Mirror Lock",
+    "difficulty": "Beginner",
+    "category": "Palindromes",
+    "story": "The lock reads the same in its own reflection.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The code reads the same forwards and backwards.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The digits add up to 22.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The first digit is even and the second digit is one more than the first.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "The third digit is half of the first digit.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "452254",
+    "explanation": "Call the first digit a. Then the second is a + 1 and the third is a / 2. a + (a + 1) + a/2 = 11, so a = 4. The first three digits are 4, 5, 2, mirrored: 452254. The code is 452254.",
+    "steps": [
+      "Call the first digit a. Then the second is a + 1 and the third is a / 2.",
+      "a + (a + 1) + a/2 = 11, so a = 4.",
+      "The first three digits are 4, 5, 2, mirrored: 452254."
+    ],
+    "hints": [
+      "A palindrome of six digits is determined by its first three digits.",
+      "The digit sum is twice (first + second + third), so those three add up to 11.",
+      "Near the end: the code starts with 45 and ends with 4. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 132,
+    "skills": [
+      "Palindromes"
+    ],
+    "tags": [
+      "palindromes",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "452254",
+        "correct": true
+      },
+      {
+        "code": "452255",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L009",
+    "number": 9,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Cube Facts",
+    "difficulty": "Beginner",
+    "category": "Basic facts",
+    "story": "A glowing cube spins in the centre of the vault.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: the number of faces on a cube.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: the number of edges on a cube.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the number of vertices on a cube.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "061208",
+    "explanation": "6 faces, 12 edges, 8 vertices. Code: 06 12 08. The code is 061208.",
+    "steps": [
+      "6 faces, 12 edges, 8 vertices.",
+      "Code: 06 12 08."
+    ],
+    "hints": [
+      "Picture a die.",
+      "A die has 6 faces, 12 edges and 8 corners. Write 6 and 8 with leading zeros.",
+      "Near the end: the code starts with 06 and ends with 8. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 138,
+    "skills": [
+      "Basic facts"
+    ],
+    "tags": [
+      "basic facts",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "061208",
+        "correct": true
+      },
+      {
+        "code": "061209",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L010",
+    "number": 10,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "The Missing Numbers",
+    "difficulty": "Beginner",
+    "category": "Grids",
+    "story": "A 3 x 3 grid of numbers has two scratched-out cells.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Every row, column and diagonal of the grid adds up to the same total.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "First pair: the number in the cell marked A, then the number in the cell marked B.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Middle pair: the shared total of each row.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "Last pair: the centre number, then the bottom-left number.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [
+      {
+        "title": "Grid",
+        "lines": [
+          "8  A  6",
+          "3  5  B",
+          "4  9  2"
+        ]
+      }
+    ],
+    "answer": "171554",
+    "explanation": "The bottom row 4 + 9 + 2 gives the total 15. Row 1: 8 + A + 6 = 15 so A = 1. Row 2: 3 + 5 + B = 15 so B = 7. Pairs: 17, 15, 54. The code is 171554.",
+    "steps": [
+      "The bottom row 4 + 9 + 2 gives the total 15.",
+      "Row 1: 8 + A + 6 = 15 so A = 1. Row 2: 3 + 5 + B = 15 so B = 7.",
+      "Pairs: 17, 15, 54."
+    ],
+    "hints": [
+      "Use a complete row to find the shared total first.",
+      "The bottom row 4 + 9 + 2 already tells you the shared total.",
+      "Near the end: the code starts with 17 and ends with 4. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 144,
+    "skills": [
+      "Grids"
+    ],
+    "tags": [
+      "grids",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "171554",
+        "correct": true
+      },
+      {
+        "code": "171555",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L011",
+    "number": 11,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Fibonacci Fragment",
+    "difficulty": "Intermediate",
+    "category": "Sequences",
+    "story": "A torn note shows the start of a famous sequence.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The note reads 2, 3, 5, 8, 13, 21. The code is the next three terms as pairs.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "345589",
+    "explanation": "13 + 21 = 34, 21 + 34 = 55, 34 + 55 = 89. The code is 345589.",
+    "steps": [
+      "13 + 21 = 34, 21 + 34 = 55, 34 + 55 = 89."
+    ],
+    "hints": [
+      "Look at how 5 relates to 2 and 3.",
+      "Each term is the sum of the two before it.",
+      "Near the end: the code starts with 34 and ends with 9. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 150,
+    "skills": [
+      "Sequences"
+    ],
+    "tags": [
+      "sequences",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "345589",
+        "correct": true
+      },
+      {
+        "code": "345580",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L012",
+    "number": 12,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Pocket Change",
+    "difficulty": "Intermediate",
+    "category": "Arithmetic",
+    "story": "A tray of coins sits beside the lock: 4 quarters, 3 dimes, 2 nickels and 7 pennies.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: the total number of coins.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: the total value in cents, minus 100.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the number of dimes and nickels together.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "164705",
+    "explanation": "16 coins in all. 147 - 100 = 47. Dimes plus nickels: 3 + 2 = 5, written 05. The code is 164705.",
+    "steps": [
+      "16 coins in all.",
+      "147 - 100 = 47.",
+      "Dimes plus nickels: 3 + 2 = 5, written 05."
+    ],
+    "hints": [
+      "Quarters are 25, dimes 10, nickels 5, pennies 1 cent.",
+      "Total value is 100 + 30 + 10 + 7 = 147 cents.",
+      "Near the end: the code starts with 16 and ends with 5. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 156,
+    "skills": [
+      "Arithmetic"
+    ],
+    "tags": [
+      "arithmetic",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "164705",
+        "correct": true
+      },
+      {
+        "code": "164706",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L013",
+    "number": 13,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Letter Count",
+    "difficulty": "Intermediate",
+    "category": "Word puzzles",
+    "story": "The vault password hint is a single long word: ENCRYPTION.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: the number of letters in ENCRYPTION.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: the number of vowels (A, E, I, O, U) in it.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the alphabet position of its first letter.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "100305",
+    "explanation": "10 letters. Vowels E, I, O: 03. E = 5: 05. The code is 100305.",
+    "steps": [
+      "10 letters.",
+      "Vowels E, I, O: 03.",
+      "E = 5: 05."
+    ],
+    "hints": [
+      "Spell the word out and tick off letters.",
+      "The vowels are E, I and O. E is the fifth letter of the alphabet.",
+      "Near the end: the code starts with 10 and ends with 5. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 162,
+    "skills": [
+      "Word puzzles"
+    ],
+    "tags": [
+      "word puzzles",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "100305",
+        "correct": true
+      },
+      {
+        "code": "100306",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L014",
+    "number": 14,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Ana and Ben",
+    "difficulty": "Intermediate",
+    "category": "Word problems",
+    "story": "Two names are carved into the door with an age riddle.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Ana is three times as old as Ben.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "In six years Ana will be exactly twice as old as Ben.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The code is Ana's age now, Ben's age now, then the sum of their ages in six years.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "180636",
+    "explanation": "3b + 6 = 2b + 12 gives b = 6 and Ana = 18. In six years: 24 + 12 = 36. Code: 18 06 36. The code is 180636.",
+    "steps": [
+      "3b + 6 = 2b + 12 gives b = 6 and Ana = 18.",
+      "In six years: 24 + 12 = 36.",
+      "Code: 18 06 36."
+    ],
+    "hints": [
+      "Let Ben be b years old. Write Ana in terms of b.",
+      "Solve 3b + 6 = 2(b + 6).",
+      "Near the end: the code starts with 18 and ends with 6. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 168,
+    "skills": [
+      "Word problems"
+    ],
+    "tags": [
+      "word problems",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "180636",
+        "correct": true
+      },
+      {
+        "code": "180637",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L015",
+    "number": 15,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Elevator Log",
+    "difficulty": "Intermediate",
+    "category": "Arithmetic",
+    "story": "The vault elevator starts at floor 0. Its log lists moves: up 7, down 3, up 12, down 5, up 4.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: the floor where the elevator ends.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: the total number of floors travelled.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the highest floor it reached.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "153116",
+    "explanation": "Final floor 15. Total distance 31. Highest floor 16. The code is 153116.",
+    "steps": [
+      "Final floor 15.",
+      "Total distance 31.",
+      "Highest floor 16."
+    ],
+    "hints": [
+      "Track the floor after every move.",
+      "Floors: 7, 4, 16, 11, 15. Distance ignores direction.",
+      "Near the end: the code starts with 15 and ends with 6. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 174,
+    "skills": [
+      "Arithmetic"
+    ],
+    "tags": [
+      "arithmetic",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "153116",
+        "correct": true
+      },
+      {
+        "code": "153117",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L016",
+    "number": 16,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Twin Sets",
+    "difficulty": "Intermediate",
+    "category": "Logic",
+    "story": "Three pairs of digits must be arranged along six slots.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The code uses the digits 1, 1, 2, 2, 3, 3 exactly once each.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "No two equal digits are next to each other.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The code starts with 1 and ends with 2.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "The two 3s are exactly three places apart.",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "The two 1s are exactly two places apart.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "131232",
+    "explanation": "Positions 1 and 6 are taken, so the 3s must be in positions 2 and 5. The remaining 1 and 2 go in positions 3 and 4. The 1s are two apart, so 1 is in position 3. Code: 1 3 1 2 3 2. The code is 131232.",
+    "steps": [
+      "Positions 1 and 6 are taken, so the 3s must be in positions 2 and 5.",
+      "The remaining 1 and 2 go in positions 3 and 4. The 1s are two apart, so 1 is in position 3.",
+      "Code: 1 3 1 2 3 2."
+    ],
+    "hints": [
+      "Place the fixed digits first: 1 at the start, 2 at the end.",
+      "Which positions can two 3s occupy if they are three apart and the ends are taken?",
+      "Near the end: the code starts with 13 and ends with 2. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 180,
+    "skills": [
+      "Logic"
+    ],
+    "tags": [
+      "logic",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "131232",
+        "correct": true
+      },
+      {
+        "code": "131233",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L017",
+    "number": 17,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Dice Tower",
+    "difficulty": "Intermediate",
+    "category": "Spatial",
+    "story": "Three dice are stacked on the vault ledge.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The tops of the three dice show 2, 5 and 3. On a die, opposite faces always add up to 7.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The code is the three top faces, then the three hidden bottom faces of the same dice in the same order.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "253524",
+    "explanation": "Bottoms: 5, 2, 4. Code: 253524. The code is 253524.",
+    "steps": [
+      "Bottoms: 5, 2, 4.",
+      "Code: 253524."
+    ],
+    "hints": [
+      "Which number is opposite 2?",
+      "Bottom = 7 minus top for each die.",
+      "Near the end: the code starts with 25 and ends with 4. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 186,
+    "skills": [
+      "Spatial"
+    ],
+    "tags": [
+      "spatial",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "253524",
+        "correct": true
+      },
+      {
+        "code": "253525",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L018",
+    "number": 18,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Sorting Gate",
+    "difficulty": "Intermediate",
+    "category": "Sorting",
+    "story": "A conveyor belt carries six numbers past the lock: 5, 8, 3, 6, 1, 4.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The first three digits are the odd numbers in the order they appear.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The last three digits are the even numbers in reverse order of appearance.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "531468",
+    "explanation": "Odds in order: 5, 3, 1. Evens reversed: 4, 6, 8. Code: 531468. The code is 531468.",
+    "steps": [
+      "Odds in order: 5, 3, 1.",
+      "Evens reversed: 4, 6, 8.",
+      "Code: 531468."
+    ],
+    "hints": [
+      "Split the belt into odd and even numbers.",
+      "Odds keep their order; evens are reversed.",
+      "Near the end: the code starts with 53 and ends with 8. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 192,
+    "skills": [
+      "Sorting"
+    ],
+    "tags": [
+      "sorting",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "531468",
+        "correct": true
+      },
+      {
+        "code": "531469",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L019",
+    "number": 19,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "Quick Sums",
+    "difficulty": "Intermediate",
+    "category": "Arithmetic",
+    "story": "The vault checks your mental arithmetic.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: 7 x 8.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: 100 - 37.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: 3 x 3, written with two digits.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "566309",
+    "explanation": "56, 63 and 09. The code is 566309.",
+    "steps": [
+      "56, 63 and 09."
+    ],
+    "hints": [
+      "Three small calculations.",
+      "Single-digit answers need a leading zero.",
+      "Near the end: the code starts with 56 and ends with 9. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 198,
+    "skills": [
+      "Arithmetic"
+    ],
+    "tags": [
+      "arithmetic",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "566309",
+        "correct": true
+      },
+      {
+        "code": "566300",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L020",
+    "number": 20,
+    "chapter": 1,
+    "chapterTitle": "Initiation",
+    "title": "The Gatekeeper",
+    "difficulty": "Intermediate",
+    "category": "Rule chains",
+    "story": "The first chapter ends with a guard who only speaks in rules.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The first digit is the number of sides on a triangle.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The second digit is the number of wheels on a unicycle.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Every later digit is the last digit of the sum of the two digits before it.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "314594",
+    "explanation": "3 and 1 start the code. 3+1=4, 1+4=5, 4+5=9, 5+9=14 so 4. Code: 314594. The code is 314594.",
+    "steps": [
+      "3 and 1 start the code.",
+      "3+1=4, 1+4=5, 4+5=9, 5+9=14 so 4.",
+      "Code: 314594."
+    ],
+    "hints": [
+      "The first two digits come from facts, the rest from a rule.",
+      "The rule is like Fibonacci but only the last digit is kept.",
+      "Near the end: the code starts with 31 and ends with 4. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 204,
+    "skills": [
+      "Rule chains"
+    ],
+    "tags": [
+      "rule chains",
+      "initiation"
+    ],
+    "tests": [
+      {
+        "code": "314594",
+        "correct": true
+      },
+      {
+        "code": "314595",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  }
+]

@@ -1,0 +1,148 @@
+// SQLite note: SQLite has no native enums or JSON columns, so enum-like fields are
+// plain strings (validated with Zod) and structured fields are JSON text columns.
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  displayName  String
+  passwordHash String
+  role         String   @default("PLAYER") // PLAYER | ADMIN
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  progress     PlayerProgress[]
+  attempts     LevelAttempt[]
+  achievements PlayerAchievement[]
+  edits        PuzzleEdit[]
+}
+
+model Level {
+  id          String   @id @default(cuid())
+  key         String   @unique // e.g. L001
+  number      Int      @unique // play order; admin can reorder
+  chapter     Int
+  chapterTitle String
+  title       String
+  difficulty  String
+  category    String
+  story       String
+  instructions String
+  cluesJson   String   // [{id,text,kind}]
+  visualsJson String   @default("[]")
+  answer      String   // six digits, always a string (leading zeros)
+  explanation String
+  stepsJson   String
+  hintsJson   String   // up to 3 hints
+  estSeconds  Int
+  skillsJson  String   @default("[]")
+  tagsJson    String   @default("[]")
+  testsJson   String   @default("[]")
+  altAnswersJson String @default("[]") // only when formally justified
+  status      String   @default("published") // draft | published | archived
+  version     Int      @default(1)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  progress PlayerProgress[]
+  attempts LevelAttempt[]
+  edits    PuzzleEdit[]
+
+  @@index([status, number])
+  @@index([chapter])
+}
+
+model DailyChallenge {
+  id          String   @id @default(cuid())
+  date        String   @unique // YYYY-MM-DD (UTC)
+  instanceId  String   @unique // e.g. daily-2026-10-19-s1234
+  seed        Int
+  source      String   @default("generated") // generated | manual
+  title       String
+  cluesJson   String
+  answer      String
+  explanation String
+  createdAt   DateTime @default(now())
+
+  attempts LevelAttempt[]
+}
+
+model PlayerProgress {
+  id          String    @id @default(cuid())
+  userId      String
+  levelId     String
+  status      String    @default("unlocked") // unlocked | completed
+  attempts    Int       @default(0)
+  hintsUsed   Int       @default(0)
+  stars       Int       @default(0)
+  bestTimeSec Int?
+  score       Int       @default(0)
+  completedAt DateTime?
+  updatedAt   DateTime  @updatedAt
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  level Level @relation(fields: [levelId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, levelId])
+  @@index([userId])
+}
+
+model LevelAttempt {
+  id          String   @id @default(cuid())
+  userId      String?
+  levelId     String?
+  dailyId     String?
+  correct     Boolean
+  elapsedSec  Int?
+  createdAt   DateTime @default(now())
+  // The submitted guess is deliberately NOT stored: it would make the table a guess log.
+
+  user  User?           @relation(fields: [userId], references: [id], onDelete: SetNull)
+  level Level?          @relation(fields: [levelId], references: [id], onDelete: Cascade)
+  daily DailyChallenge? @relation(fields: [dailyId], references: [id], onDelete: Cascade)
+
+  @@index([levelId, correct])
+  @@index([userId, createdAt])
+}
+
+model Achievement {
+  id          String @id // matches src/data/achievements.ts ids
+  name        String
+  description String
+  createdAt   DateTime @default(now())
+
+  players PlayerAchievement[]
+}
+
+model PlayerAchievement {
+  id            String   @id @default(cuid())
+  userId        String
+  achievementId String
+  unlockedAt    DateTime @default(now())
+
+  user        User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievement Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, achievementId])
+}
+
+model PuzzleEdit {
+  id        String   @id @default(cuid())
+  levelId   String
+  editorId  String?
+  action    String   // create | update | publish | archive | reorder | import
+  snapshot  String   // JSON snapshot of the level BEFORE the change (answers stay server-side)
+  createdAt DateTime @default(now())
+
+  level  Level @relation(fields: [levelId], references: [id], onDelete: Cascade)
+  editor User? @relation(fields: [editorId], references: [id], onDelete: SetNull)
+
+  @@index([levelId, createdAt])
+}

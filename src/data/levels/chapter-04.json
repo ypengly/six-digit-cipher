@@ -1,0 +1,1402 @@
+[
+  {
+    "id": "L061",
+    "number": 61,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Switchboard",
+    "difficulty": "Expert",
+    "category": "Boolean logic",
+    "story": "Six switches (1 = ON, 0 = OFF) control the vault. Their gates are described below.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Every switch is either 0 or 1.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Switch 1 is OFF.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Switch 2 XOR switch 3 = 0 (they match).",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "Switch 3 XOR switch 4 = 1 (they differ).",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "Switch 5 is NOT switch 4.",
+        "kind": "clue"
+      },
+      {
+        "id": "c6",
+        "text": "Switch 6 is switch 1 OR switch 4.",
+        "kind": "clue"
+      },
+      {
+        "id": "c7",
+        "text": "Exactly three switches are ON.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "011010",
+    "explanation": "If switch 2 = 1: switches 2, 3, 5 are ON, 4 and 6 are OFF: 0 1 1 0 1 0, three ON. If switch 2 = 0: 0 0 0 1 0 1 has only two ON, so it fails. Code: 011010. The code is 011010.",
+    "steps": [
+      "If switch 2 = 1: switches 2, 3, 5 are ON, 4 and 6 are OFF: 0 1 1 0 1 0, three ON.",
+      "If switch 2 = 0: 0 0 0 1 0 1 has only two ON, so it fails.",
+      "Code: 011010."
+    ],
+    "hints": [
+      "Switch 1 is OFF. What does that make switch 6?",
+      "Everything depends on switch 2. Try it ON, then try it OFF, and count the ON switches.",
+      "Near the end: the code starts with 01 and ends with 0. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 360,
+    "skills": [
+      "Boolean logic"
+    ],
+    "tags": [
+      "boolean logic",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "011010",
+        "correct": true
+      },
+      {
+        "code": "011011",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L062",
+    "number": 62,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Mirror Alphabet",
+    "difficulty": "Expert",
+    "category": "Multi-stage decoding",
+    "story": "A message in a mirrored alphabet appears: HRC VRTSG GDL ULFI MRMV AVIL.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The alphabet is mirrored (A becomes Z, B becomes Y, ...). Decode each word; each word is a number.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The code is those six numbers in order.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "682490",
+    "explanation": "Decoded: SIX, EIGHT, TWO, FOUR, NINE, ZERO. Code: 682490. The code is 682490.",
+    "steps": [
+      "Decoded: SIX, EIGHT, TWO, FOUR, NINE, ZERO.",
+      "Code: 682490."
+    ],
+    "hints": [
+      "A and Z swap, B and Y swap. What does H become?",
+      "H -> S, R -> I, C -> X. Do the same for every word.",
+      "Near the end: the code starts with 68 and ends with 0. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 366,
+    "skills": [
+      "Multi-stage decoding"
+    ],
+    "tags": [
+      "multi-stage decoding",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "682490",
+        "correct": true
+      },
+      {
+        "code": "682491",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L063",
+    "number": 63,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Counting Ways",
+    "difficulty": "Expert",
+    "category": "Combinatorics",
+    "story": "The vault wants three counts.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: the number of handshakes if 12 people each shake hands once with everyone else.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: the number of ways to pick 2 people from 9.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the number of different arrangements of the letters AABB.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "663606",
+    "explanation": "C(12,2) = 66, C(9,2) = 36, AABB arrangements = 6. The code is 663606.",
+    "steps": [
+      "C(12,2) = 66, C(9,2) = 36, AABB arrangements = 6."
+    ],
+    "hints": [
+      "Each handshake is a pair of people. Order within a pair does not matter.",
+      "Pairs from n: n(n-1)/2. Arrangements of AABB: 4! divided by 2! twice.",
+      "Near the end: the code starts with 66 and ends with 6. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 372,
+    "skills": [
+      "Combinatorics"
+    ],
+    "tags": [
+      "combinatorics",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "663606",
+        "correct": true
+      },
+      {
+        "code": "663607",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L064",
+    "number": 64,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Quarter Turn",
+    "difficulty": "Expert",
+    "category": "Spatial reasoning",
+    "story": "A grid of digits will be turned by the vault.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Rotate the grid a quarter turn clockwise. The code is the first two rows of the rotated grid, read left to right.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [
+      {
+        "title": "Grid",
+        "lines": [
+          "4 0 7",
+          "1 9 2",
+          "8 3 5"
+        ]
+      }
+    ],
+    "answer": "814390",
+    "explanation": "Rotated rows: 814 / 390 / 527. Code: 814390. The code is 814390.",
+    "steps": [
+      "Rotated rows: 814 / 390 / 527.",
+      "Code: 814390."
+    ],
+    "hints": [
+      "The left column becomes the top row.",
+      "After a clockwise turn, the top row is the old left column read bottom to top.",
+      "Near the end: the code starts with 81 and ends with 0. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 378,
+    "skills": [
+      "Spatial reasoning"
+    ],
+    "tags": [
+      "spatial reasoning",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "814390",
+        "correct": true
+      },
+      {
+        "code": "814391",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L065",
+    "number": 65,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "The Invariant",
+    "difficulty": "Expert",
+    "category": "Mathematical invariants",
+    "story": "A board holds numbers. A move erases two numbers a and b and writes a + b + a x b in their place. Moves repeat until one number remains.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Board one: 1, 2, 3, 4. Board two: 1, 1, 2, 3. Whatever order you choose, the final number is always the same for a given board.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The code is board one's final number followed by board two's final number, each as three digits with leading zeros.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "119047",
+    "explanation": "Product of (x + 1) over the board never changes. Board one: 2 x 3 x 4 x 5 = 120, final 119. Board two: 2 x 2 x 3 x 4 = 48, final 47 = 047. Code: 119047. The code is 119047.",
+    "steps": [
+      "Product of (x + 1) over the board never changes.",
+      "Board one: 2 x 3 x 4 x 5 = 120, final 119. Board two: 2 x 2 x 3 x 4 = 48, final 47 = 047.",
+      "Code: 119047."
+    ],
+    "hints": [
+      "Try the moves in two different orders on board one.",
+      "Notice that a + b + ab + 1 = (a + 1)(b + 1). What stays constant?",
+      "Near the end: the code starts with 11 and ends with 7. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 384,
+    "skills": [
+      "Mathematical invariants"
+    ],
+    "tags": [
+      "mathematical invariants",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "119047",
+        "correct": true
+      },
+      {
+        "code": "119048",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L066",
+    "number": 66,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Smudged Code",
+    "difficulty": "Expert",
+    "category": "Incomplete evidence",
+    "story": "Part of the code is smudged. Only three digits are readable: 2 _ 9 _ _ 1.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The visible digits are in positions 1, 3 and 6: 2, 9 and 1.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The three missing digits are consecutive whole numbers, increasing from left to right.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "All six digits are different.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "The six digits add up to 24.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "239451",
+    "explanation": "k + (k + 1) + (k + 2) = 12 so k = 3. Missing digits 3, 4, 5. Code: 239451. The code is 239451.",
+    "steps": [
+      "k + (k + 1) + (k + 2) = 12 so k = 3.",
+      "Missing digits 3, 4, 5. Code: 239451."
+    ],
+    "hints": [
+      "Call the first missing digit k. What are the other two?",
+      "The visible digits sum to 12, so the missing ones sum to 12.",
+      "Near the end: the code starts with 23 and ends with 1. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 390,
+    "skills": [
+      "Incomplete evidence"
+    ],
+    "tags": [
+      "incomplete evidence",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "239451",
+        "correct": true
+      },
+      {
+        "code": "239452",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L067",
+    "number": 67,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Folded Net",
+    "difficulty": "Expert",
+    "category": "Spatial reasoning",
+    "story": "A flat net of a cube is folded. Opposite faces end up at opposite sides.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Fold the net into a cube. The code gives, for faces 1 to 6 in order, the number on the face directly opposite.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [
+      {
+        "title": "Net",
+        "lines": [
+          "    [1]",
+          "[2] [3] [4] [5]",
+          "    [6]"
+        ]
+      }
+    ],
+    "answer": "645231",
+    "explanation": "Opposites: 1-6, 2-4, 3-5. Code: 645231. The code is 645231.",
+    "steps": [
+      "Opposites: 1-6, 2-4, 3-5.",
+      "Code: 645231."
+    ],
+    "hints": [
+      "In a straight row of four faces, faces two apart are opposite.",
+      "The vertical strip 1-3-6 closes a ring with face 5: so 1 is opposite 6.",
+      "Near the end: the code starts with 64 and ends with 1. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 396,
+    "skills": [
+      "Spatial reasoning"
+    ],
+    "tags": [
+      "spatial reasoning",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "645231",
+        "correct": true
+      },
+      {
+        "code": "645232",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L068",
+    "number": 68,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Keypad Cipher",
+    "difficulty": "Expert",
+    "category": "Layered ciphers",
+    "story": "A word is hidden twice over: FLSKHU.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Stage one: each letter of FLSKHU was moved forward 3 places. Undo it.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Stage two: type the real word on an old phone keypad (2 = ABC, 3 = DEF, 4 = GHI, 5 = JKL, 6 = MNO, 7 = PQRS, 8 = TUV, 9 = WXYZ). The digits you would press are the code.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "247437",
+    "explanation": "FLSKHU -> CIPHER. Keys: 247437. The code is 247437.",
+    "steps": [
+      "FLSKHU -> CIPHER.",
+      "Keys: 247437."
+    ],
+    "hints": [
+      "Shift each letter back by three before anything else.",
+      "FLSKHU becomes CIPHER. C is on key 2.",
+      "Near the end: the code starts with 24 and ends with 7. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 402,
+    "skills": [
+      "Layered ciphers"
+    ],
+    "tags": [
+      "layered ciphers",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "247437",
+        "correct": true
+      },
+      {
+        "code": "247438",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L069",
+    "number": 69,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Chinese Remainders",
+    "difficulty": "Expert",
+    "category": "Modular arithmetic",
+    "story": "Three pairs each satisfy a system of remainder rules.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: leaves remainder 2 mod 3, remainder 3 mod 5, remainder 2 mod 7.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: remainder 1 mod 4, remainder 2 mod 5, remainder 3 mod 7.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: remainder 4 mod 5, remainder 5 mod 6, remainder 1 mod 7.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "231729",
+    "explanation": "23, 17 and 29. The code is 231729.",
+    "steps": [
+      "23, 17 and 29."
+    ],
+    "hints": [
+      "Start with the largest modulus and list numbers with that remainder.",
+      "For the last pair, 4 mod 5 and 5 mod 6 together mean the number is 29 mod 30.",
+      "Near the end: the code starts with 23 and ends with 9. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 408,
+    "skills": [
+      "Modular arithmetic"
+    ],
+    "tags": [
+      "modular arithmetic",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "231729",
+        "correct": true
+      },
+      {
+        "code": "231720",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L070",
+    "number": 70,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Backward Chain",
+    "difficulty": "Expert",
+    "category": "Dependency chains",
+    "story": "Each digit is defined by the ones to its right. Start at the end.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The first digit is the second plus the third, minus 4.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The second digit is three less than the third.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The third digit is the fifth plus the fourth, minus the last.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "The fourth digit is twice the last digit.",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "The fifth digit is the fourth plus the last.",
+        "kind": "clue"
+      },
+      {
+        "id": "c6",
+        "text": "The last digit is the only even prime number.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "958462",
+    "explanation": "6th = 2, 4th = 4, 5th = 6, 3rd = 6 + 4 - 2 = 8, 2nd = 5, 1st = 5 + 8 - 4 = 9. Code: 958462. The code is 958462.",
+    "steps": [
+      "6th = 2, 4th = 4, 5th = 6, 3rd = 6 + 4 - 2 = 8, 2nd = 5, 1st = 5 + 8 - 4 = 9.",
+      "Code: 958462."
+    ],
+    "hints": [
+      "Find the clue that does not depend on any other digit.",
+      "Last = 2, then fourth, then fifth, then third, second, first.",
+      "Near the end: the code starts with 95 and ends with 2. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 414,
+    "skills": [
+      "Dependency chains"
+    ],
+    "tags": [
+      "dependency chains",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "958462",
+        "correct": true
+      },
+      {
+        "code": "958463",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L071",
+    "number": 71,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Zigzag",
+    "difficulty": "Expert",
+    "category": "Permutations",
+    "story": "Six numbered tiles (1 to 6) must be placed in a zigzag pattern.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The code uses each digit 1 to 6 exactly once.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The digits go up, down, up, down, up: first < second > third < fourth > fifth < sixth.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The first digit is 2, the third is 1, and the last is 6.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "The second digit is exactly one more than the fourth digit.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "251436",
+    "explanation": "Options for (2nd, 4th, 5th): (5,4,3), (4,5,3), (3,5,4). Second = fourth + 1 leaves (5,4,3). Code: 251436. The code is 251436.",
+    "steps": [
+      "Options for (2nd, 4th, 5th): (5,4,3), (4,5,3), (3,5,4).",
+      "Second = fourth + 1 leaves (5,4,3).",
+      "Code: 251436."
+    ],
+    "hints": [
+      "Place the three fixed digits first.",
+      "The remaining digits are 3, 4 and 5 for positions 2, 4, 5. Position 4 must beat position 5.",
+      "Near the end: the code starts with 25 and ends with 6. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 420,
+    "skills": [
+      "Permutations"
+    ],
+    "tags": [
+      "permutations",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "251436",
+        "correct": true
+      },
+      {
+        "code": "251437",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L072",
+    "number": 72,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Spiral Out",
+    "difficulty": "Expert",
+    "category": "Spatial reasoning",
+    "story": "A 5 x 5 grid of digits sits on the vault floor.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Start at the centre cell. Move 1 step right, 1 step down, 2 left, 2 up, 3 right, 3 down, and so on, spiralling outward.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The code is the first six cells you stand on (including the centre), in order.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [
+      {
+        "title": "Floor grid",
+        "lines": [
+          "9 4 1 7 3",
+          "2 8 6 0 5",
+          "7 1 4 9 2",
+          "3 5 8 2 6",
+          "0 9 3 6 1"
+        ]
+      }
+    ],
+    "answer": "492851",
+    "explanation": "Cells visited give 492851. The code is 492851.",
+    "steps": [
+      "Cells visited give 492851."
+    ],
+    "hints": [
+      "Mark the centre of the 5 x 5 grid first.",
+      "Cells in order: centre, right, down, left, left, up.",
+      "Near the end: the code starts with 49 and ends with 1. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 426,
+    "skills": [
+      "Spatial reasoning"
+    ],
+    "tags": [
+      "spatial reasoning",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "492851",
+        "correct": true
+      },
+      {
+        "code": "492852",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L073",
+    "number": 73,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Say What You See",
+    "difficulty": "Expert",
+    "category": "Complex sequences",
+    "story": "The wall shows 1, 11, 21, 1211, 111221 and stops.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Each term describes the previous term. The code is the next term.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "312211",
+    "explanation": "111221 is three 1s, two 2s, one 1. Next term: 312211. The code is 312211.",
+    "steps": [
+      "111221 is three 1s, two 2s, one 1.",
+      "Next term: 312211."
+    ],
+    "hints": [
+      "Read 111221 aloud: \"three ones, ...\"",
+      "Group equal digits: 111, 22, 1. Describe each group.",
+      "Near the end: the code starts with 31 and ends with 1. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 432,
+    "skills": [
+      "Complex sequences"
+    ],
+    "tags": [
+      "complex sequences",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "312211",
+        "correct": true
+      },
+      {
+        "code": "312212",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L074",
+    "number": 74,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Three Riddles II",
+    "difficulty": "Expert",
+    "category": "Independent deductions",
+    "story": "Three independent riddles each yield a pair.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: a two-digit number whose digits add up to 11, and which is 27 less than its reversal.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: a perfect square whose two digits multiply to 18.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the largest two-digit multiple of 13 whose digits are consecutive numbers.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "473678",
+    "explanation": "47 (74 - 47 = 27), 36 (3 x 6 = 18), 78. Code: 47 36 78. The code is 473678.",
+    "steps": [
+      "47 (74 - 47 = 27), 36 (3 x 6 = 18), 78.",
+      "Code: 47 36 78."
+    ],
+    "hints": [
+      "Treat each riddle separately.",
+      "First: reversal minus number is 9 times the digit difference. Second: list two-digit squares. Third: list multiples of 13.",
+      "Near the end: the code starts with 47 and ends with 8. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 438,
+    "skills": [
+      "Independent deductions"
+    ],
+    "tags": [
+      "independent deductions",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "473678",
+        "correct": true
+      },
+      {
+        "code": "473679",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L075",
+    "number": 75,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Gray Matter",
+    "difficulty": "Expert",
+    "category": "Boolean logic",
+    "story": "A Gray-coded display flashes: 0111 0000 0010 1101 0100 0011.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Gray code: the first bit of the binary number is copied; each later binary bit is the previous binary bit XOR the current Gray bit.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Convert each 4-bit Gray word to ordinary binary, then to a decimal digit. The six digits are the code.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "503972",
+    "explanation": "Binary words decode to 503972. The code is 503972.",
+    "steps": [
+      "Binary words decode to 503972."
+    ],
+    "hints": [
+      "Convert the first word: 0111. The first bit is 0.",
+      "Binary bits: 0, then 0 XOR 1 = 1, then 1 XOR 1 = 0, then 0 XOR 1 = 1.",
+      "Near the end: the code starts with 50 and ends with 2. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 444,
+    "skills": [
+      "Boolean logic"
+    ],
+    "tags": [
+      "boolean logic",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "503972",
+        "correct": true
+      },
+      {
+        "code": "503973",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L076",
+    "number": 76,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Self-Describing",
+    "difficulty": "Expert",
+    "category": "Self-reference",
+    "story": "Each digit of the code counts something about the whole code.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The first digit is the number of even digits in the code (0 counts as even).",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The second digit is the number of odd digits in the code.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The third digit is the number of digits that are 5 or greater.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "The fourth digit is the number of zeros in the code.",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "The fifth digit is the number of twos in the code.",
+        "kind": "clue"
+      },
+      {
+        "id": "c6",
+        "text": "The last digit is the number of digits that are less than 3.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "420114",
+    "explanation": "Assume 4 even, 2 odd digits; the digits are 4, 2, 0, 1, 1, 4. Check each statement: 4 evens, 2 odds, no digit 5+, one zero, one two, four digits below 3. Code: 420114. The code is 420114.",
+    "steps": [
+      "Assume 4 even, 2 odd digits; the digits are 4, 2, 0, 1, 1, 4.",
+      "Check each statement: 4 evens, 2 odds, no digit 5+, one zero, one two, four digits below 3.",
+      "Code: 420114."
+    ],
+    "hints": [
+      "Even digits plus odd digits make six in total. What does that say about the first two digits?",
+      "The first two digits add up to 6. If no digit is 5 or more, the third digit is 0.",
+      "Near the end: the code starts with 42 and ends with 4. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 450,
+    "skills": [
+      "Self-reference"
+    ],
+    "tags": [
+      "self-reference",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "420114",
+        "correct": true
+      },
+      {
+        "code": "420115",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L077",
+    "number": 77,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Torch Bridge",
+    "difficulty": "Expert",
+    "category": "Optimisation",
+    "story": "Four travellers must cross a bridge at night. At most two can cross at once and they must carry the only torch. A pair moves at the speed of the slower walker. The torch must be walked back for others.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Group A takes 1, 2, 5 and 10 minutes to cross alone. Group B takes 1, 3, 6 and 8 minutes.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "First pair: the fastest total time for group A to get everyone across.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Middle pair: the fastest total time for group B.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "Last pair: the number of one-way trips in the fastest plan for group A.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "171805",
+    "explanation": "Group A: 17 minutes in 5 trips (send 1+2, 1 back, 5+10, 2 back, 1+2). Group B: 18 minutes. The code is 171805.",
+    "steps": [
+      "Group A: 17 minutes in 5 trips (send 1+2, 1 back, 5+10, 2 back, 1+2).",
+      "Group B: 18 minutes."
+    ],
+    "hints": [
+      "Send the two fastest first. Who should bring the torch back?",
+      "Compare two plans: always escort with the fastest walker, versus sending the two slowest together.",
+      "Near the end: the code starts with 17 and ends with 5. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 456,
+    "skills": [
+      "Optimisation"
+    ],
+    "tags": [
+      "optimisation",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "171805",
+        "correct": true
+      },
+      {
+        "code": "171806",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L078",
+    "number": 78,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Lattice Paths",
+    "difficulty": "Expert",
+    "category": "Combinatorics",
+    "story": "A courier moves only right or down on a grid of streets.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: the number of shortest routes across a 4 x 4 block grid (4 steps right, 4 steps down).",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: the number of shortest routes across a 3 x 5 grid (5 right, 3 down).",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the number of shortest routes across a 2 x 2 grid.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "705606",
+    "explanation": "C(8,4) = 70, C(8,3) = 56, C(4,2) = 6. The code is 705606.",
+    "steps": [
+      "C(8,4) = 70, C(8,3) = 56, C(4,2) = 6."
+    ],
+    "hints": [
+      "Every route is an arrangement of R steps and D steps.",
+      "Choose which of the 8 steps are rights: C(8,4) and C(8,3).",
+      "Near the end: the code starts with 70 and ends with 6. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 462,
+    "skills": [
+      "Combinatorics"
+    ],
+    "tags": [
+      "combinatorics",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "705606",
+        "correct": true
+      },
+      {
+        "code": "705607",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L079",
+    "number": 79,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "Nim Gate",
+    "difficulty": "Expert",
+    "category": "Game theory",
+    "story": "Three piles of stones hold 7, 9 and 12. Players take any number of stones from one pile. Whoever takes the last stone wins. You move first and want to win.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: the nim-sum (bitwise XOR) of the three pile sizes.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: the number of the only pile (counting 1, 2, 3) where a winning move exists.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: how many stones that winning move removes.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "020102",
+    "explanation": "Nim-sum = 2. Only pile 1 works: 7 -> 5. Code: 020102. The code is 020102.",
+    "steps": [
+      "Nim-sum = 2.",
+      "Only pile 1 works: 7 -> 5.",
+      "Code: 020102."
+    ],
+    "hints": [
+      "A winning move leaves a nim-sum of zero.",
+      "7 XOR 9 XOR 12 = 2. A pile p is a candidate if p XOR 2 is smaller than p.",
+      "Near the end: the code starts with 02 and ends with 2. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 468,
+    "skills": [
+      "Game theory"
+    ],
+    "tags": [
+      "game theory",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "020102",
+        "correct": true
+      },
+      {
+        "code": "020103",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L080",
+    "number": 80,
+    "chapter": 4,
+    "chapterTitle": "The Mind Labyrinth",
+    "title": "The Labyrinth",
+    "difficulty": "Expert",
+    "category": "Interdependent clues",
+    "story": "The last gate of the chapter ties three pairs together.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The first pair is a perfect square greater than 40.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The last pair is the first pair written backwards, and it is a multiple of 23.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The middle pair is the first pair plus the last pair, divided by 11.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "641046",
+    "explanation": "46 = 2 x 23, so the first pair is 64. (64 + 46) / 11 = 10. Code: 64 10 46. The code is 641046.",
+    "steps": [
+      "46 = 2 x 23, so the first pair is 64.",
+      "(64 + 46) / 11 = 10.",
+      "Code: 64 10 46."
+    ],
+    "hints": [
+      "List the squares above 40 and reverse each.",
+      "Squares: 49, 64, 81. Reversals: 94, 46, 18. Which is a multiple of 23?",
+      "Near the end: the code starts with 64 and ends with 6. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 474,
+    "skills": [
+      "Interdependent clues"
+    ],
+    "tags": [
+      "interdependent clues",
+      "the mind labyrinth"
+    ],
+    "tests": [
+      {
+        "code": "641046",
+        "correct": true
+      },
+      {
+        "code": "641047",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  }
+]

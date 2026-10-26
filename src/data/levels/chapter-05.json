@@ -1,0 +1,1409 @@
+[
+  {
+    "id": "L081",
+    "number": 81,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Double Lock",
+    "difficulty": "Master",
+    "category": "Layered ciphers",
+    "story": "Two locks guard one word: PUSURQ.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Step 1: the word was first shifted forward 5 places in the alphabet, then written in a mirrored alphabet (A <-> Z, B <-> Y, ...). Undo both, in the right order.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Step 2: turn the real word into numbers (A = 1 ... I = 9). Those digits are the code.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "613145",
+    "explanation": "Mirror undone: KFHFIJ. Shift undone: FACADE. Letters to numbers: 613145. The code is 613145.",
+    "steps": [
+      "Mirror undone: KFHFIJ. Shift undone: FACADE.",
+      "Letters to numbers: 613145."
+    ],
+    "hints": [
+      "The last thing done to the word must be undone first.",
+      "Undo the mirror alphabet first: P becomes K. Then shift back 5.",
+      "Near the end: the code starts with 61 and ends with 5. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 540,
+    "skills": [
+      "Layered ciphers"
+    ],
+    "tags": [
+      "layered ciphers",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "613145",
+        "correct": true
+      },
+      {
+        "code": "613146",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L082",
+    "number": 82,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Cross Reference",
+    "difficulty": "Master",
+    "category": "Cross-referenced clues",
+    "story": "Three clues all point at the same sentence, and at each other.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Sentence S: \"A guard quietly polishes the silver key before dawn.\"",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Clue 1: The first pair is the number of words in sentence S.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Clue 2: The middle pair is the number of letters in the longest word of sentence S.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "Clue 3: The last pair is Clue 1's answer times Clue 2's answer, divided by two.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "090836",
+    "explanation": "Words: 9. Longest word: 8 letters. 9 x 8 / 2 = 36. Code: 090836. The code is 090836.",
+    "steps": [
+      "Words: 9. Longest word: 8 letters.",
+      "9 x 8 / 2 = 36.",
+      "Code: 090836."
+    ],
+    "hints": [
+      "Clue 3 uses the answers to Clues 1 and 2.",
+      "Count words, find the longest word, then compute.",
+      "Near the end: the code starts with 09 and ends with 6. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 546,
+    "skills": [
+      "Cross-referenced clues"
+    ],
+    "tags": [
+      "cross-referenced clues",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "090836",
+        "correct": true
+      },
+      {
+        "code": "090837",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L083",
+    "number": 83,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Three Panels",
+    "difficulty": "Master",
+    "category": "Multi-panel visual",
+    "story": "Two panels (■ = filled, □ = empty) feed one code.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Panel A is shown as it is. The first three digits are the number of filled cells in each row of Panel A, top to bottom.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Panel B has been turned a quarter turn clockwise. Turn it back (a quarter turn counter-clockwise). The last three digits are the number of filled cells in each column of the restored Panel B, left to right.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [
+      {
+        "title": "Panel A",
+        "lines": [
+          "■□■",
+          "■■■",
+          "□□■"
+        ]
+      },
+      {
+        "title": "Panel B (turned)",
+        "lines": [
+          "■■■",
+          "■■□",
+          "■□□"
+        ]
+      }
+    ],
+    "answer": "231321",
+    "explanation": "Rows of A: 2, 3, 1. Restored B: ■□□ / ■■□ / ■■■. Columns of B: 3, 2, 1. Code: 231321. The code is 231321.",
+    "steps": [
+      "Rows of A: 2, 3, 1. Restored B: ■□□ / ■■□ / ■■■. Columns of B: 3, 2, 1.",
+      "Code: 231321."
+    ],
+    "hints": [
+      "Panel A is straightforward: count per row.",
+      "Rotating Panel B back counter-clockwise turns its top row into the left column.",
+      "Near the end: the code starts with 23 and ends with 1. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 552,
+    "skills": [
+      "Multi-panel visual"
+    ],
+    "tags": [
+      "multi-panel visual",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "231321",
+        "correct": true
+      },
+      {
+        "code": "231322",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L084",
+    "number": 84,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Rules of Engagement",
+    "difficulty": "Master",
+    "category": "Strict constraints",
+    "story": "Eight strict rules shape a single code.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "All six digits are different.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Odd and even digits alternate, starting with an odd digit.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "No digit is larger than 8.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "The six digits add up to 25.",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "The three even digits add up to 10.",
+        "kind": "clue"
+      },
+      {
+        "id": "c6",
+        "text": "The odd digits increase from left to right.",
+        "kind": "clue"
+      },
+      {
+        "id": "c7",
+        "text": "Neighbouring digits differ by at least 3.",
+        "kind": "clue"
+      },
+      {
+        "id": "c8",
+        "text": "The last digit is larger than the fourth digit.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "385072",
+    "explanation": "Odd digits 3, 5, 7. Even digits sum to 10 from {0, 2, 8} or {0, 4, 6}. Neighbour gaps force 8 between 3 and 5, and 0 or 2 between 5 and 7; the last rule picks 0 then 2. Code: 385072. The code is 385072.",
+    "steps": [
+      "Odd digits 3, 5, 7. Even digits sum to 10 from {0, 2, 8} or {0, 4, 6}.",
+      "Neighbour gaps force 8 between 3 and 5, and 0 or 2 between 5 and 7; the last rule picks 0 then 2.",
+      "Code: 385072."
+    ],
+    "hints": [
+      "The odd digits add up to 15. Which increasing triples from 1, 3, 5, 7 do that?",
+      "The odd digits are 3, 5, 7. Now use the neighbour rule to place the even digits.",
+      "Near the end: the code starts with 38 and ends with 2. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 558,
+    "skills": [
+      "Strict constraints"
+    ],
+    "tags": [
+      "strict constraints",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "385072",
+        "correct": true
+      },
+      {
+        "code": "385073",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L085",
+    "number": 85,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "The Machine",
+    "difficulty": "Master",
+    "category": "Hidden rules",
+    "story": "A machine takes a number in and prints a digit out. It always follows the same hidden rule.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Examples: 1 -> 7, 2 -> 4, 3 -> 1, 4 -> 8, 12 -> 4, 20 -> 0.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Feed the machine 5, 6, 7, 8, 9 and 10. The six digits it prints, in order, are the code.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "529630",
+    "explanation": "Rule: last digit of 7 x n. Outputs for 5 to 10: 5, 2, 9, 6, 3, 0. The code is 529630.",
+    "steps": [
+      "Rule: last digit of 7 x n.",
+      "Outputs for 5 to 10: 5, 2, 9, 6, 3, 0."
+    ],
+    "hints": [
+      "Look at how the output changes when the input goes up by one.",
+      "The outputs drop by 3 (mod 10) each time: the rule multiplies by 7 and keeps the last digit.",
+      "Near the end: the code starts with 52 and ends with 0. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 564,
+    "skills": [
+      "Hidden rules"
+    ],
+    "tags": [
+      "hidden rules",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "529630",
+        "correct": true
+      },
+      {
+        "code": "529631",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L086",
+    "number": 86,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Spelling Sums",
+    "difficulty": "Master",
+    "category": "Mixed maths and language",
+    "story": "Numbers can be counted by value and by spelling.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: the total number of letters used when writing out ONE, TWO, ... up to TEN in English.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: the sum of those numbers from 1 to 10 whose English names have exactly five letters.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the number of letters (no hyphen) in the English name of first pair plus middle pair.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "391810",
+    "explanation": "Letters: 39. Five-letter numbers: 3 + 7 + 8 = 18. 39 + 18 = 57: \"fifty-seven\" has 10 letters. The code is 391810.",
+    "steps": [
+      "Letters: 39. Five-letter numbers: 3 + 7 + 8 = 18.",
+      "39 + 18 = 57: \"fifty-seven\" has 10 letters."
+    ],
+    "hints": [
+      "Write the ten words and count: ONE has 3 letters.",
+      "Five-letter names: THREE, SEVEN, EIGHT.",
+      "Near the end: the code starts with 39 and ends with 0. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 570,
+    "skills": [
+      "Mixed maths and language"
+    ],
+    "tags": [
+      "mixed maths and language",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "391810",
+        "correct": true
+      },
+      {
+        "code": "391811",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L087",
+    "number": 87,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Three Stages",
+    "difficulty": "Master",
+    "category": "Layered reasoning",
+    "story": "A single word passes through three machines.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Stage 1: add up the letter values of LOGIC (A = 1 ... Z = 26).",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Stage 2: write that sum in binary.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Stage 3: replace every 1 in the binary number with 7 and every 0 with 2. The result is the code.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "727772",
+    "explanation": "LOGIC = 46. 46 in binary = 101110. Substitution gives 727772. The code is 727772.",
+    "steps": [
+      "LOGIC = 46.",
+      "46 in binary = 101110.",
+      "Substitution gives 727772."
+    ],
+    "hints": [
+      "L + O + G + I + C.",
+      "46 in binary: 32 + 8 + 4 + 2.",
+      "Near the end: the code starts with 72 and ends with 2. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 576,
+    "skills": [
+      "Layered reasoning"
+    ],
+    "tags": [
+      "layered reasoning",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "727772",
+        "correct": true
+      },
+      {
+        "code": "727773",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L088",
+    "number": 88,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Prime Neighbours",
+    "difficulty": "Master",
+    "category": "Adversarial constraints",
+    "story": "Six digits, a long list of possibilities, and one survivor.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Use each digit 0, 1, 2, 3, 4, 5 exactly once.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The sum of every two neighbouring digits is a prime number.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The code starts with 5 and ends with 0.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "521430",
+    "explanation": "5 must be followed by 2 (since 5 + 0 would end too early). Then 2-1, 1-4, 4-3, 3-0 all give prime sums. Code: 521430. The code is 521430.",
+    "steps": [
+      "5 must be followed by 2 (since 5 + 0 would end too early).",
+      "Then 2-1, 1-4, 4-3, 3-0 all give prime sums.",
+      "Code: 521430."
+    ],
+    "hints": [
+      "Which digits can sit next to 1? Which can sit next to 4?",
+      "List allowed neighbours: 1 next to 2 or 4 only; 4 next to 1 or 3 only.",
+      "Near the end: the code starts with 52 and ends with 0. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 582,
+    "skills": [
+      "Adversarial constraints"
+    ],
+    "tags": [
+      "adversarial constraints",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "521430",
+        "correct": true
+      },
+      {
+        "code": "521431",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L089",
+    "number": 89,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Cheryl's Birthday",
+    "difficulty": "Master",
+    "category": "Knowledge logic",
+    "story": "Two friends are told one part of a secret date. Albert hears the month, Bernard the day. The possible dates: May 15, 16, 19; June 17, 18; July 14, 16; August 14, 15, 17.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Albert: \"I don't know the date, and I know Bernard doesn't either.\"",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Bernard: \"At first I didn't know, but now I do.\"",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Albert: \"Now I know too.\"",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "The code is: the number of dates left after Albert's first statement (one digit), the number left after Bernard's statement (one digit), then the secret date as month (two digits) and day (two digits).",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "530716",
+    "explanation": "Unique days: 18 and 19, so May and June go. Five dates remain. Bernard now knows, so the day cannot repeat: 14 goes. Three dates remain. Albert now knows, so July 16. Code: 5 3 07 16. The code is 530716.",
+    "steps": [
+      "Unique days: 18 and 19, so May and June go. Five dates remain.",
+      "Bernard now knows, so the day cannot repeat: 14 goes. Three dates remain.",
+      "Albert now knows, so July 16. Code: 5 3 07 16."
+    ],
+    "hints": [
+      "A day that appears only once would let Bernard know immediately.",
+      "Albert knowing that Bernard doesn't know means his month contains no unique day.",
+      "Near the end: the code starts with 53 and ends with 6. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 588,
+    "skills": [
+      "Knowledge logic"
+    ],
+    "tags": [
+      "knowledge logic",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "530716",
+        "correct": true
+      },
+      {
+        "code": "530717",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L090",
+    "number": 90,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Sum of Letters",
+    "difficulty": "Master",
+    "category": "Alphametic",
+    "story": "Every letter in the sum below stands for a different digit, and no number starts with 0.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "SEND + MORE = MONEY",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The code is the digits for M, O, N, E, Y, D, in that order.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "106527",
+    "explanation": "S=9, E=5, N=6, D=7, M=1, O=0, R=8, Y=2. Code: 106527. The code is 106527.",
+    "steps": [
+      "S=9, E=5, N=6, D=7, M=1, O=0, R=8, Y=2.",
+      "Code: 106527."
+    ],
+    "hints": [
+      "MONEY has one more digit than SEND or MORE. What must M be?",
+      "M = 1. Then look at the thousands column to find O.",
+      "Near the end: the code starts with 10 and ends with 7. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 594,
+    "skills": [
+      "Alphametic"
+    ],
+    "tags": [
+      "alphametic",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "106527",
+        "correct": true
+      },
+      {
+        "code": "106528",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L091",
+    "number": 91,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Hex and Back",
+    "difficulty": "Master",
+    "category": "Base conversion",
+    "story": "A hexadecimal word glows on the final panel: C0FFE.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Convert the hexadecimal number C0FFE to ordinary decimal (A = 10, B = 11, ... F = 15).",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Write the decimal digits in reverse order. That is the code.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "625097",
+    "explanation": "C0FFE = 790526. Reversed: 625097. The code is 625097.",
+    "steps": [
+      "C0FFE = 790526.",
+      "Reversed: 625097."
+    ],
+    "hints": [
+      "C0FFE has five hex digits. The first is worth 16^4.",
+      "C = 12, F = 15, E = 14. Multiply each by its power of 16 and add.",
+      "Near the end: the code starts with 62 and ends with 7. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 600,
+    "skills": [
+      "Base conversion"
+    ],
+    "tags": [
+      "base conversion",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "625097",
+        "correct": true
+      },
+      {
+        "code": "625098",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L092",
+    "number": 92,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Shuffle Machine",
+    "difficulty": "Master",
+    "category": "Permutations",
+    "story": "A shuffler moves the digits of 4 8 1 7 2 9 around in a fixed pattern.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "One shuffle moves the digit in position 1 to position 3, position 2 to 1, position 3 to 5, position 4 to 2, position 5 to 6 and position 6 to 4.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Apply the shuffle three times in a row to 4 8 1 7 2 9. The final arrangement is the code.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "927184",
+    "explanation": "After three shuffles the digits are 9 2 7 1 8 4. The code is 927184.",
+    "steps": [
+      "After three shuffles the digits are 9 2 7 1 8 4."
+    ],
+    "hints": [
+      "Do one shuffle at a time on paper.",
+      "Follow one digit: 1 goes 1 -> 3 -> 5 -> 6 -> 4 -> 2 -> 1. The cycle has length 6.",
+      "Near the end: the code starts with 92 and ends with 4. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 606,
+    "skills": [
+      "Permutations"
+    ],
+    "tags": [
+      "permutations",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "927184",
+        "correct": true
+      },
+      {
+        "code": "927185",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L093",
+    "number": 93,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Magic Digits",
+    "difficulty": "Master",
+    "category": "Constraint grids",
+    "story": "A 3 x 3 magic square uses each digit 1 to 9 once, and every row, column and diagonal adds up to the same number. Three cells are known.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Complete the square. The code is the six blank cells read left to right, top to bottom.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [
+      {
+        "title": "Square",
+        "lines": [
+          "2 _ 6",
+          "_ _ _",
+          "_ 3 _"
+        ]
+      }
+    ],
+    "answer": "795148",
+    "explanation": "Top row 2, 7, 6. Centre 5. Square: 2 7 6 / 9 5 1 / 4 3 8. Blanks in order: 7, 9, 5, 1, 4, 8. The code is 795148.",
+    "steps": [
+      "Top row 2, 7, 6. Centre 5.",
+      "Square: 2 7 6 / 9 5 1 / 4 3 8.",
+      "Blanks in order: 7, 9, 5, 1, 4, 8."
+    ],
+    "hints": [
+      "The magic total of a 3 x 3 square with 1 to 9 is 15.",
+      "The top row is 2, ?, 6 so the middle top cell must be 7. The centre must be 5.",
+      "Near the end: the code starts with 79 and ends with 8. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 612,
+    "skills": [
+      "Constraint grids"
+    ],
+    "tags": [
+      "constraint grids",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "795148",
+        "correct": true
+      },
+      {
+        "code": "795149",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L094",
+    "number": 94,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Seating Plan",
+    "difficulty": "Master",
+    "category": "Constraint satisfaction",
+    "story": "Six guests, A to F, must be seated in seats 1 to 6. The code gives the seat number of A, then B, then C, then D, then E, then F.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "B sits in the last seat (seat 6).",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "A sits in an odd-numbered seat, and D sits in the seat directly after A.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "E sits directly between C and A (all three side by side).",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "F sits somewhere after D.",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "Every seat is used exactly once.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "361425",
+    "explanation": "Block: C E A D. B takes seat 6, so the block fits seats 1-4 or 2-5. F must be after D, so the block is in seats 1-4 and F sits in seat 5. Seats: A3, B6, C1, D4, E2, F5. Code: 361425. The code is 361425.",
+    "steps": [
+      "Block: C E A D. B takes seat 6, so the block fits seats 1-4 or 2-5.",
+      "F must be after D, so the block is in seats 1-4 and F sits in seat 5.",
+      "Seats: A3, B6, C1, D4, E2, F5. Code: 361425."
+    ],
+    "hints": [
+      "Treat \"A then D\" as a block, and \"C, E, A\" as another.",
+      "D directly after A means E cannot be on A's right. So the order is C, E, A, D.",
+      "Near the end: the code starts with 36 and ends with 5. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 618,
+    "skills": [
+      "Constraint satisfaction"
+    ],
+    "tags": [
+      "constraint satisfaction",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "361425",
+        "correct": true
+      },
+      {
+        "code": "361426",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L095",
+    "number": 95,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Rule Table",
+    "difficulty": "Master",
+    "category": "Hidden rules",
+    "story": "A table links two inputs to an output with one consistent rule.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "(1, 2) -> 3,  (2, 3) -> 7,  (3, 4) -> 13,  (4, 5) -> 21",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The code lists the outputs for (5, 6), (6, 7) and (7, 8), each as a pair.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "314357",
+    "explanation": "5^2 + 6 = 31, 6^2 + 7 = 43, 7^2 + 8 = 57. The code is 314357.",
+    "steps": [
+      "5^2 + 6 = 31, 6^2 + 7 = 43, 7^2 + 8 = 57."
+    ],
+    "hints": [
+      "Compare each output with the first input squared.",
+      "Output = first input squared plus second input.",
+      "Near the end: the code starts with 31 and ends with 7. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 624,
+    "skills": [
+      "Hidden rules"
+    ],
+    "tags": [
+      "hidden rules",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "314357",
+        "correct": true
+      },
+      {
+        "code": "314358",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L096",
+    "number": 96,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Seven-Segment Ghost",
+    "difficulty": "Master",
+    "category": "Constraint satisfaction",
+    "story": "A seven-segment display flickers. You can only tell how many segments are lit per digit: 6, 2, 5, 5, 6, 3 (in order).",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The display shows 6, 2, 5, 5, 6 and 3 lit segments for the six digits. (Digit 0 uses 6, 1 uses 2, 2, 3 and 5 use 5, 4 uses 4, 6 and 9 use 6, 7 uses 3, 8 uses 7.)",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "All six digits are different.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The code contains exactly one even digit.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "The digits add up to 31.",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "The fifth digit is greater than the first.",
+        "kind": "clue"
+      },
+      {
+        "id": "c6",
+        "text": "The third digit is smaller than the fourth.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "613597",
+    "explanation": "Digit 2 = 1, digit 6 = 7. Positions 1 and 5 are from {0, 6, 9}; positions 3 and 4 from {2, 3, 5}. Sum gives 3 and 5 in the middle (increasing), and 6, 9 on the outside. Code: 613597. The code is 613597.",
+    "steps": [
+      "Digit 2 = 1, digit 6 = 7. Positions 1 and 5 are from {0, 6, 9}; positions 3 and 4 from {2, 3, 5}.",
+      "Sum gives 3 and 5 in the middle (increasing), and 6, 9 on the outside.",
+      "Code: 613597."
+    ],
+    "hints": [
+      "Only digit 1 uses 2 segments, and only 7 uses 3.",
+      "The second digit is 1 and the last is 7. The other digits come from {0, 6, 9} and {2, 3, 5}.",
+      "Near the end: the code starts with 61 and ends with 7. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 630,
+    "skills": [
+      "Constraint satisfaction"
+    ],
+    "tags": [
+      "constraint satisfaction",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "613597",
+        "correct": true
+      },
+      {
+        "code": "613598",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L097",
+    "number": 97,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Between the Twins",
+    "difficulty": "Master",
+    "category": "Primes",
+    "story": "Twin primes are primes that differ by 2, such as 41 and 43.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Find the first three twin-prime pairs where both primes are above 40.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The code is the number sitting exactly between the two primes of each pair, as pairs.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "426072",
+    "explanation": "Middles: 42, 60, 72. The code is 426072.",
+    "steps": [
+      "Middles: 42, 60, 72."
+    ],
+    "hints": [
+      "Start with 41 and 43, then look for the next pair.",
+      "Twin pairs above 40: (41, 43), (59, 61), (71, 73).",
+      "Near the end: the code starts with 42 and ends with 2. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 636,
+    "skills": [
+      "Primes"
+    ],
+    "tags": [
+      "primes",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "426072",
+        "correct": true
+      },
+      {
+        "code": "426073",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L098",
+    "number": 98,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Polybius Vault",
+    "difficulty": "Master",
+    "category": "Layered ciphers",
+    "story": "A keyed grid and a shifted word: KRS.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Step 1: KRS was shifted forward 3 places. Undo the shift.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Step 2: find each letter of the real word in the grid. Write its row number then its column number (rows and columns are numbered 1 to 5). Join the pairs to make the code.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [
+      {
+        "title": "Grid (I and J share a cell)",
+        "lines": [
+          "V A U L T",
+          "B C D E F",
+          "G H I K M",
+          "N O P Q R",
+          "S W X Y Z"
+        ]
+      }
+    ],
+    "answer": "324243",
+    "explanation": "Word: HOP. H = 32, O = 42, P = 43. Code: 324243. The code is 324243.",
+    "steps": [
+      "Word: HOP.",
+      "H = 32, O = 42, P = 43. Code: 324243."
+    ],
+    "hints": [
+      "First recover the word.",
+      "KRS shifted back 3 is HOP. H is in the third row, second column.",
+      "Near the end: the code starts with 32 and ends with 3. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 642,
+    "skills": [
+      "Layered ciphers"
+    ],
+    "tags": [
+      "layered ciphers",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "324243",
+        "correct": true
+      },
+      {
+        "code": "324244",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L099",
+    "number": 99,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "Pointer Chain",
+    "difficulty": "Master",
+    "category": "Hidden rules",
+    "story": "Six cells hold the numbers 3, 5, 0, 4, 1, 2 in positions 0 to 5.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Every number is a pointer to the position it names.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Start at position 0. Read the number there, then jump to the position it points to. Keep going until you are about to revisit a position. The numbers you read, in order, are the code.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "341520",
+    "explanation": "Numbers read: 3, 4, 1, 5, 2, 0. The code is 341520.",
+    "steps": [
+      "Numbers read: 3, 4, 1, 5, 2, 0."
+    ],
+    "hints": [
+      "Position 0 holds 3. Where does that send you?",
+      "Positions visited: 0, 3, 4, 1, 5, 2.",
+      "Near the end: the code starts with 34 and ends with 0. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 648,
+    "skills": [
+      "Hidden rules"
+    ],
+    "tags": [
+      "hidden rules",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "341520",
+        "correct": true
+      },
+      {
+        "code": "341521",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L100",
+    "number": 100,
+    "chapter": 5,
+    "chapterTitle": "The Final Cipher",
+    "title": "The Final Cipher",
+    "difficulty": "Master",
+    "category": "Master puzzle",
+    "story": "The last vault door has four chambers, and each one tests a different skill from your journey.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Chamber of Ciphers: undo a shift of 3 on VHYHQ. The word names a number. That number is the first digit.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Chamber of Sequences: continue 7, 11, 19, 35, ... by one term. Digits two and three are that term (two digits).",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Chamber of Bases: digits four and five are the value of hexadecimal 1F in ordinary decimal.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "Chamber of Logic: the last digit is the number of TRUE statements among these four: (i) the first digit is prime; (ii) the second digit is larger than the third; (iii) the fourth and fifth digits add up to 4; (iv) the code reads the same backwards.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "767312",
+    "explanation": "SEVEN gives 7. 35 + 32 = 67; hex 1F = 31. True statements: (i) yes, (ii) no, (iii) yes, (iv) no, so 2. Code: 767312. The code is 767312.",
+    "steps": [
+      "SEVEN gives 7.",
+      "35 + 32 = 67; hex 1F = 31.",
+      "True statements: (i) yes, (ii) no, (iii) yes, (iv) no, so 2. Code: 767312."
+    ],
+    "hints": [
+      "Each chamber fixes a different part of the code. Do them in order.",
+      "Sequence gaps double: +4, +8, +16, so the next gap is +32. 1F in hex is 16 + 15.",
+      "Near the end: the code starts with 76 and ends with 2. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 654,
+    "skills": [
+      "Master puzzle"
+    ],
+    "tags": [
+      "master puzzle",
+      "the final cipher"
+    ],
+    "tests": [
+      {
+        "code": "767312",
+        "correct": true
+      },
+      {
+        "code": "767313",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  }
+]

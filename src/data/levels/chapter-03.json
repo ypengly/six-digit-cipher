@@ -1,0 +1,1466 @@
+[
+  {
+    "id": "L041",
+    "number": 41,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "The Forged Ledger",
+    "difficulty": "Advanced",
+    "category": "Red herrings",
+    "story": "A ledger holds six memos. Only memos stamped VERIFIED are genuine. Forgeries are everywhere.",
+    "instructions": "Only clues marked VERIFIED can be trusted. Ignore every UNVERIFIED clue. Enter the six-digit code; leading zeros count.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "[VERIFIED] The first pair is the number of letters in VAULT, multiplied by 3.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "[UNVERIFIED] The first pair is 51.",
+        "kind": "decoy"
+      },
+      {
+        "id": "c3",
+        "text": "[VERIFIED] The middle pair is two to the power of five.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "[UNVERIFIED] The last digit is 9.",
+        "kind": "decoy"
+      },
+      {
+        "id": "c5",
+        "text": "[VERIFIED] The last pair is the middle pair minus the first pair.",
+        "kind": "clue"
+      },
+      {
+        "id": "c6",
+        "text": "[UNVERIFIED] The middle pair is a multiple of 7.",
+        "kind": "decoy"
+      }
+    ],
+    "visuals": [],
+    "answer": "153217",
+    "explanation": "5 x 3 = 15; 2^5 = 32; 32 - 15 = 17. Code: 15 32 17. The code is 153217.",
+    "steps": [
+      "5 x 3 = 15; 2^5 = 32; 32 - 15 = 17.",
+      "Code: 15 32 17."
+    ],
+    "hints": [
+      "Ignore every memo that is not stamped VERIFIED.",
+      "Compute 5 x 3, then 2^5, then subtract.",
+      "Near the end: the code starts with 15 and ends with 7. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 240,
+    "skills": [
+      "Red herrings"
+    ],
+    "tags": [
+      "red herrings",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "153217",
+        "correct": true
+      },
+      {
+        "code": "153218",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L042",
+    "number": 42,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Shifted Letters",
+    "difficulty": "Advanced",
+    "category": "Cryptograms",
+    "story": "A cryptogram is scratched into the wall: HIGMHI.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Each letter of HIGMHI was moved forward 4 places in the alphabet. Undo the shift to reveal a word.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Then replace each letter by its position in the alphabet (A = 1 ... I = 9). The result is the code.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "453945",
+    "explanation": "HIGMHI shifted back by 4 is DECIDE. D=4, E=5, C=3, I=9, D=4, E=5: 453945. The code is 453945.",
+    "steps": [
+      "HIGMHI shifted back by 4 is DECIDE.",
+      "D=4, E=5, C=3, I=9, D=4, E=5: 453945."
+    ],
+    "hints": [
+      "Shift each letter back by four.",
+      "H goes back to D. Do the same for the rest.",
+      "Near the end: the code starts with 45 and ends with 5. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 246,
+    "skills": [
+      "Cryptograms"
+    ],
+    "tags": [
+      "cryptograms",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "453945",
+        "correct": true
+      },
+      {
+        "code": "453946",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L043",
+    "number": 43,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Mixed Bases",
+    "difficulty": "Advanced",
+    "category": "Base conversion",
+    "story": "Three numbers in three number systems are carved over the door.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: octal 77, converted to ordinary decimal.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: hexadecimal 2A, converted to decimal.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: binary 11001, converted to decimal.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "634225",
+    "explanation": "63, 42, 25. The code is 634225.",
+    "steps": [
+      "63, 42, 25."
+    ],
+    "hints": [
+      "Each digit position is worth a power of the base.",
+      "Octal 77 = 7 x 8 + 7. Hex 2A = 2 x 16 + 10. Binary 11001 = 16 + 8 + 1.",
+      "Near the end: the code starts with 63 and ends with 5. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 252,
+    "skills": [
+      "Base conversion"
+    ],
+    "tags": [
+      "base conversion",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "634225",
+        "correct": true
+      },
+      {
+        "code": "634226",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L044",
+    "number": 44,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Hidden in Plain Sight",
+    "difficulty": "Advanced",
+    "category": "Hidden patterns",
+    "story": "The guard's message looks innocent. Count carefully.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The guard says: \"Is it a very hidden answer?\" The code is the number of letters in each word, in order.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "221466",
+    "explanation": "Word lengths: 2, 2, 1, 4, 6, 6. The code is 221466.",
+    "steps": [
+      "Word lengths: 2, 2, 1, 4, 6, 6."
+    ],
+    "hints": [
+      "The message has exactly six words.",
+      "Count the letters of each word separately. Ignore punctuation.",
+      "Near the end: the code starts with 22 and ends with 6. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 258,
+    "skills": [
+      "Hidden patterns"
+    ],
+    "tags": [
+      "hidden patterns",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "221466",
+        "correct": true
+      },
+      {
+        "code": "221467",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L045",
+    "number": 45,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Growing Gaps",
+    "difficulty": "Advanced",
+    "category": "Nested sequences",
+    "story": "The wall shows 2, 3, 5, 8, 12, 17 and then stops.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The gaps between neighbouring terms form a pattern of their own. The code is the next three terms as pairs.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "233038",
+    "explanation": "Gaps: +6, +7, +8. 17 + 6 = 23, 23 + 7 = 30, 30 + 8 = 38. The code is 233038.",
+    "steps": [
+      "Gaps: +6, +7, +8.",
+      "17 + 6 = 23, 23 + 7 = 30, 30 + 8 = 38."
+    ],
+    "hints": [
+      "Write down the differences between terms.",
+      "The differences are 1, 2, 3, 4, 5. What comes next?",
+      "Near the end: the code starts with 23 and ends with 8. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 264,
+    "skills": [
+      "Nested sequences"
+    ],
+    "tags": [
+      "nested sequences",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "233038",
+        "correct": true
+      },
+      {
+        "code": "233039",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L046",
+    "number": 46,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Three Guards",
+    "difficulty": "Advanced",
+    "category": "Truth and lies",
+    "story": "Three guards each make a statement about the first two digits. Exactly one of them is lying.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Guard 1: \"The first digit is 3.\"",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Guard 2: \"The second digit is 5.\"",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Guard 3: \"The first two digits add up to 9.\"",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "Exactly one of the three guards lies.",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "The first digit is even.",
+        "kind": "clue"
+      },
+      {
+        "id": "c6",
+        "text": "The third digit is the last digit of the product of the first two.",
+        "kind": "clue"
+      },
+      {
+        "id": "c7",
+        "text": "The fourth digit is the sum of the first two digits.",
+        "kind": "clue"
+      },
+      {
+        "id": "c8",
+        "text": "The last two digits form the square of the second digit.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "450925",
+    "explanation": "Even first digit means Guard 1 lies. Guards 2 and 3 are honest: second digit 5, sum 9, so the first digit is 4. Third digit: 20 -> 0. Fourth: 9. Last two: 25. Code: 450925. The code is 450925.",
+    "steps": [
+      "Even first digit means Guard 1 lies. Guards 2 and 3 are honest: second digit 5, sum 9, so the first digit is 4.",
+      "Third digit: 20 -> 0. Fourth: 9. Last two: 25.",
+      "Code: 450925."
+    ],
+    "hints": [
+      "If the first digit is even, what does that say about Guard 1?",
+      "Guard 1 must be the liar, so Guards 2 and 3 tell the truth.",
+      "Near the end: the code starts with 45 and ends with 5. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 270,
+    "skills": [
+      "Truth and lies"
+    ],
+    "tags": [
+      "truth and lies",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "450925",
+        "correct": true
+      },
+      {
+        "code": "450926",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L047",
+    "number": 47,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Symbol Swap",
+    "difficulty": "Advanced",
+    "category": "Symbol substitution",
+    "story": "Four glyphs stand for four different single-digit numbers.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "◆ + ◆ + ◆ = 9",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "◆ + ▲ = 8",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "▲ x ● = 10",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "■ - ● = 5",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "The code is the glyph sequence ■ ◆ ▲ ● ● ◆ translated into digits.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "735223",
+    "explanation": "◆=3, ▲=5, ●=2, ■=7. Code: 735223. The code is 735223.",
+    "steps": [
+      "◆=3, ▲=5, ●=2, ■=7.",
+      "Code: 735223."
+    ],
+    "hints": [
+      "Solve ◆ first: three of them make 9.",
+      "◆ = 3, so ▲ = 5. Then ● and ■ follow.",
+      "Near the end: the code starts with 73 and ends with 3. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 276,
+    "skills": [
+      "Symbol substitution"
+    ],
+    "tags": [
+      "symbol substitution",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "735223",
+        "correct": true
+      },
+      {
+        "code": "735224",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L048",
+    "number": 48,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Mini Sudoku",
+    "difficulty": "Advanced",
+    "category": "Constraint satisfaction",
+    "story": "A 4 x 4 grid must hold 1 to 4 in every row, column and 2 x 2 box.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Fill the blanks (_) so every row, every column and every 2 x 2 box contains 1, 2, 3 and 4 once.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The code is the six blanks read column by column, each column top to bottom, columns left to right.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [
+      {
+        "title": "Grid",
+        "lines": [
+          "1 _ 3 _",
+          "_ 4 1 _",
+          "2 1 _ 3",
+          "4 _ 2 1"
+        ]
+      }
+    ],
+    "answer": "323442",
+    "explanation": "Solution grid rows: 1234 / 3412 / 2143 / 4321. Reading blanks by column: 3 | 2, 3 | 4 | 4, 2. Code: 323442. The code is 323442.",
+    "steps": [
+      "Solution grid rows: 1234 / 3412 / 2143 / 4321.",
+      "Reading blanks by column: 3 | 2, 3 | 4 | 4, 2.",
+      "Code: 323442."
+    ],
+    "hints": [
+      "Start with the row that has two blanks and the column that constrains them.",
+      "Row 1 needs 2 and 4, but the 4 in column 2 forbids 4 in the second cell.",
+      "Near the end: the code starts with 32 and ends with 2. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 282,
+    "skills": [
+      "Constraint satisfaction"
+    ],
+    "tags": [
+      "constraint satisfaction",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "323442",
+        "correct": true
+      },
+      {
+        "code": "323443",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L049",
+    "number": 49,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Order of Operations",
+    "difficulty": "Advanced",
+    "category": "Order of operations",
+    "story": "The vault applies multiplication before addition, and the rules matter.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: 8 + 4 x 3.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: (8 + 4) x 3.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: 2 + 3^2 x 2 - 4 / 2.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "203618",
+    "explanation": "8 + 12 = 20. 12 x 3 = 36. 2 + 18 - 2 = 18. The code is 203618.",
+    "steps": [
+      "8 + 12 = 20.",
+      "12 x 3 = 36.",
+      "2 + 18 - 2 = 18."
+    ],
+    "hints": [
+      "Brackets first, then powers, then multiplication and division, then addition and subtraction.",
+      "3^2 = 9, then 9 x 2 = 18, then 4 / 2 = 2.",
+      "Near the end: the code starts with 20 and ends with 8. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 288,
+    "skills": [
+      "Order of operations"
+    ],
+    "tags": [
+      "order of operations",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "203618",
+        "correct": true
+      },
+      {
+        "code": "203619",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L050",
+    "number": 50,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Digit Chain",
+    "difficulty": "Advanced",
+    "category": "Rule chains",
+    "story": "Each digit depends on the ones before it.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The first digit is the number of vertices of a tetrahedron.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The second digit is twice the first digit, minus 3.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The third digit is the remainder when the sum of the first two digits is divided by 7.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "The fourth digit is the last digit of the second digit times the third digit.",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "The fifth digit is the difference between the first and fourth digits (ignoring sign) plus the third digit.",
+        "kind": "clue"
+      },
+      {
+        "id": "c6",
+        "text": "The last digit is the last digit of the sum of all five earlier digits.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "452067",
+    "explanation": "4, 5, 2, 0, 6, 7. Code: 452067. The code is 452067.",
+    "steps": [
+      "4, 5, 2, 0, 6, 7.",
+      "Code: 452067."
+    ],
+    "hints": [
+      "A tetrahedron has 4 corners. Build from the left.",
+      "4, then 2 x 4 - 3 = 5, then (4 + 5) mod 7.",
+      "Near the end: the code starts with 45 and ends with 7. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 294,
+    "skills": [
+      "Rule chains"
+    ],
+    "tags": [
+      "rule chains",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "452067",
+        "correct": true
+      },
+      {
+        "code": "452068",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L051",
+    "number": 51,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Hit Count",
+    "difficulty": "Advanced",
+    "category": "Deduction",
+    "story": "A code-breaking machine logged earlier attempts. Each shows how many digits were correct AND in the right place.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The code uses six different digits.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Attempt 1: 876543  ->  2 digits are in the right place.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Attempt 2: 706239  ->  1 digit is in the right place.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "Attempt 3: 370516  ->  1 digit is in the right place.",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "Attempt 4: 071923  ->  2 digits are in the right place.",
+        "kind": "clue"
+      },
+      {
+        "id": "c6",
+        "text": "Attempt 5: 946385  ->  0 digits are in the right place.",
+        "kind": "clue"
+      },
+      {
+        "id": "c7",
+        "text": "Attempt 6: 420673  ->  1 digit is in the right place.",
+        "kind": "clue"
+      },
+      {
+        "id": "c8",
+        "text": "Attempt 7: 134620  ->  1 digit is in the right place.",
+        "kind": "clue"
+      },
+      {
+        "id": "c9",
+        "text": "Attempt 8: 547690  ->  0 digits are in the right place.",
+        "kind": "clue"
+      },
+      {
+        "id": "c10",
+        "text": "Attempt 9: 019427  ->  0 digits are in the right place.",
+        "kind": "clue"
+      },
+      {
+        "id": "c11",
+        "text": "Attempt 10: 534268  ->  1 digit is in the right place.",
+        "kind": "clue"
+      },
+      {
+        "id": "c12",
+        "text": "Attempt 11: 830456  ->  1 digit is in the right place.",
+        "kind": "clue"
+      },
+      {
+        "id": "c13",
+        "text": "Attempt 12: 650712  ->  1 digit is in the right place.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "804913",
+    "explanation": "The code consistent with every attempt is 804913. Eliminate digits per position using the 0-hit attempts, then count hits in the others. The code is 804913.",
+    "steps": [
+      "The code consistent with every attempt is 804913.",
+      "Eliminate digits per position using the 0-hit attempts, then count hits in the others."
+    ],
+    "hints": [
+      "Attempts with 0 hits tell you which digits are NOT in which positions.",
+      "Combine attempts: a position can only hold one digit, and all six digits differ.",
+      "Near the end: the code starts with 80 and ends with 3. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 300,
+    "skills": [
+      "Deduction"
+    ],
+    "tags": [
+      "deduction",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "804913",
+        "correct": true
+      },
+      {
+        "code": "804914",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L052",
+    "number": 52,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Roman Numerals",
+    "difficulty": "Advanced",
+    "category": "Symbol substitution",
+    "story": "Roman inscriptions cover the vault walls.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: XLVII.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: LXXXIII.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the last two digits of the year MMXXIV.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "478324",
+    "explanation": "47, 83, 24. The code is 478324.",
+    "steps": [
+      "47, 83, 24."
+    ],
+    "hints": [
+      "XL = 40, L = 50, X = 10, C = 100, M = 1000.",
+      "XLVII = 40 + 5 + 2. LXXXIII = 50 + 30 + 3. MMXXIV = 2000 + 24.",
+      "Near the end: the code starts with 47 and ends with 4. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 306,
+    "skills": [
+      "Symbol substitution"
+    ],
+    "tags": [
+      "symbol substitution",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "478324",
+        "correct": true
+      },
+      {
+        "code": "478325",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L053",
+    "number": 53,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Knights and Knaves",
+    "difficulty": "Advanced",
+    "category": "Truth and lies",
+    "story": "Six islanders (A to F) are either knights, who always tell the truth, or knaves, who always lie.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Island one. A says: \"A and B are the same type.\" B says: \"C is a knave.\" C says: \"A is a knight.\"",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Island two. D says: \"F is a knave.\" E says: \"D and F are the same type.\" F says: \"E is a knight.\"",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The code has one digit per islander, in order A to F. A knave's digit is 0. A knight's digit is the islander's place in the list (A = 1, B = 2, ... F = 6).",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "020400",
+    "explanation": "Island one: A knave, B knight, C knave. Island two: D knight, E knave, F knave. Digits: A=0, B=2, C=0, D=4, E=0, F=0. Code: 020400. The code is 020400.",
+    "steps": [
+      "Island one: A knave, B knight, C knave. Island two: D knight, E knave, F knave.",
+      "Digits: A=0, B=2, C=0, D=4, E=0, F=0.",
+      "Code: 020400."
+    ],
+    "hints": [
+      "Work out island one on its own: assume A is a knight and see what happens.",
+      "Whatever A is, B turns out to be a knight. Then C is a knave, and A must be a knave too.",
+      "Near the end: the code starts with 02 and ends with 0. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 312,
+    "skills": [
+      "Truth and lies"
+    ],
+    "tags": [
+      "truth and lies",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "020400",
+        "correct": true
+      },
+      {
+        "code": "020401",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L054",
+    "number": 54,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Product of Pairs",
+    "difficulty": "Advanced",
+    "category": "Number theory",
+    "story": "Two sealed numbers multiply to a famous value.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "The first pair times the middle pair equals 1296.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "The middle pair is four times the first pair.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "The last pair is the number of positive divisors of 1296.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "187225",
+    "explanation": "first^2 = 324, first = 18, middle = 72. 1296 = 2^4 x 3^4 has 5 x 5 = 25 divisors. The code is 187225.",
+    "steps": [
+      "first^2 = 324, first = 18, middle = 72.",
+      "1296 = 2^4 x 3^4 has 5 x 5 = 25 divisors."
+    ],
+    "hints": [
+      "Replace the middle pair by 4 x first.",
+      "So 4 x first^2 = 1296. For divisors, factor 1296 = 6^4.",
+      "Near the end: the code starts with 18 and ends with 5. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 318,
+    "skills": [
+      "Number theory"
+    ],
+    "tags": [
+      "number theory",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "187225",
+        "correct": true
+      },
+      {
+        "code": "187226",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L055",
+    "number": 55,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Letter Equations",
+    "difficulty": "Advanced",
+    "category": "Algebra",
+    "story": "Six letters stand for six digits.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "A + B = 11",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "B + C = 9",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "C + D = 8",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "D + E = 10",
+        "kind": "clue"
+      },
+      {
+        "id": "c5",
+        "text": "E + F = 13",
+        "kind": "clue"
+      },
+      {
+        "id": "c6",
+        "text": "F = 7",
+        "kind": "clue"
+      },
+      {
+        "id": "c7",
+        "text": "The code is the digits of A, B, C, D, E, F in that order.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "654467",
+    "explanation": "F=7, E=6, D=4, C=4, B=5, A=6. Code: 654467. The code is 654467.",
+    "steps": [
+      "F=7, E=6, D=4, C=4, B=5, A=6.",
+      "Code: 654467."
+    ],
+    "hints": [
+      "F is known, so work backwards.",
+      "E = 13 - 7 = 6, then D = 10 - 6.",
+      "Near the end: the code starts with 65 and ends with 7. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 324,
+    "skills": [
+      "Algebra"
+    ],
+    "tags": [
+      "algebra",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "654467",
+        "correct": true
+      },
+      {
+        "code": "654468",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L056",
+    "number": 56,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Noise Filter",
+    "difficulty": "Advanced",
+    "category": "Hidden patterns",
+    "story": "A string of random characters scrolls past: ab3de7fo2gi9hu4ij1ka5ez8pa6",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Only digits that come immediately after a vowel (a, e, i, o, u) belong to the code. Take them in order.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "729456",
+    "explanation": "Digits after vowels: 7, 2, 9, 4, 5, 6. The code is 729456.",
+    "steps": [
+      "Digits after vowels: 7, 2, 9, 4, 5, 6."
+    ],
+    "hints": [
+      "Ignore digits that follow a consonant.",
+      "Scan for a vowel followed directly by a digit.",
+      "Near the end: the code starts with 72 and ends with 6. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 330,
+    "skills": [
+      "Hidden patterns"
+    ],
+    "tags": [
+      "hidden patterns",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "729456",
+        "correct": true
+      },
+      {
+        "code": "729457",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L057",
+    "number": 57,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Calculator Trail",
+    "difficulty": "Advanced",
+    "category": "Multi-step calculation",
+    "story": "The vault gives a starting number and a list of instructions.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Start with 7. Multiply by 8. That result is the first pair.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Subtract 6, then divide by 5. That result is the middle pair.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Square the middle pair, then subtract the first pair. That result is the last pair.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "561044",
+    "explanation": "56, 10, and 100 - 56 = 44. The code is 561044.",
+    "steps": [
+      "56, 10, and 100 - 56 = 44."
+    ],
+    "hints": [
+      "Follow the instructions in order.",
+      "56 - 6 = 50, 50 / 5 = 10, 10^2 = 100.",
+      "Near the end: the code starts with 56 and ends with 4. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 336,
+    "skills": [
+      "Multi-step calculation"
+    ],
+    "tags": [
+      "multi-step calculation",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "561044",
+        "correct": true
+      },
+      {
+        "code": "561045",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L058",
+    "number": 58,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Triangular Vault",
+    "difficulty": "Advanced",
+    "category": "Sequences",
+    "story": "Triangular numbers are 1, 3, 6, 10, 15, 21, ... Each is the sum of 1 up to n.",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "First pair: the 8th triangular number.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "Middle pair: the 10th triangular number.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "Last pair: the 12th triangular number minus the 9th.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "365533",
+    "explanation": "T8 = 36, T10 = 55, T12 - T9 = 33. The code is 365533.",
+    "steps": [
+      "T8 = 36, T10 = 55, T12 - T9 = 33."
+    ],
+    "hints": [
+      "The nth triangular number is n(n+1)/2.",
+      "T12 - T9 = 10 + 11 + 12.",
+      "Near the end: the code starts with 36 and ends with 3. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 342,
+    "skills": [
+      "Sequences"
+    ],
+    "tags": [
+      "sequences",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "365533",
+        "correct": true
+      },
+      {
+        "code": "365534",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L059",
+    "number": 59,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "Two Voices",
+    "difficulty": "Advanced",
+    "category": "Interleaved sequences",
+    "story": "Two sequences are woven together: 2, 100, 4, 90, 8, 80, 16, 70, ...",
+    "instructions": "Use every clue. Single-digit answers inside a pair need a leading zero (6 becomes 06). Enter the six-digit code.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "Every other term belongs to the same sequence. The code is the next three terms as pairs.",
+        "kind": "clue"
+      }
+    ],
+    "visuals": [],
+    "answer": "326064",
+    "explanation": "Doubling: 2, 4, 8, 16, 32, 64. Decreasing: 100, 90, 80, 70, 60. Next terms: 32, 60, 64. The code is 326064.",
+    "steps": [
+      "Doubling: 2, 4, 8, 16, 32, 64. Decreasing: 100, 90, 80, 70, 60.",
+      "Next terms: 32, 60, 64."
+    ],
+    "hints": [
+      "Separate odd-numbered terms from even-numbered terms.",
+      "One sequence doubles. The other drops by 10.",
+      "Near the end: the code starts with 32 and ends with 4. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 348,
+    "skills": [
+      "Interleaved sequences"
+    ],
+    "tags": [
+      "interleaved sequences",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "326064",
+        "correct": true
+      },
+      {
+        "code": "326065",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  },
+  {
+    "id": "L060",
+    "number": 60,
+    "chapter": 3,
+    "chapterTitle": "The Deceiver",
+    "title": "The Deceiver",
+    "difficulty": "Advanced",
+    "category": "Multi-step deception",
+    "story": "The last gate of the chapter is guarded by a master of misdirection. Trust only what is VERIFIED.",
+    "instructions": "Only clues marked VERIFIED can be trusted. Ignore every UNVERIFIED clue. Enter the six-digit code; leading zeros count.",
+    "clues": [
+      {
+        "id": "c1",
+        "text": "[VERIFIED] Undo a shift of 3 on WKUHH. The word names a number. The first pair is that number times nine.",
+        "kind": "clue"
+      },
+      {
+        "id": "c2",
+        "text": "[VERIFIED] The middle pair is binary 101101 minus the first pair.",
+        "kind": "clue"
+      },
+      {
+        "id": "c3",
+        "text": "[VERIFIED] The last pair is the number of letters in the decoded word, times the middle pair.",
+        "kind": "clue"
+      },
+      {
+        "id": "c4",
+        "text": "[UNVERIFIED] The code ends with a 5.",
+        "kind": "decoy"
+      },
+      {
+        "id": "c5",
+        "text": "[UNVERIFIED] The first pair is 36.",
+        "kind": "decoy"
+      }
+    ],
+    "visuals": [],
+    "answer": "271890",
+    "explanation": "WKUHH shifted back 3 is THREE, so the first pair is 3 x 9 = 27. 101101 is 45, so the middle pair is 45 - 27 = 18. THREE has 5 letters: 5 x 18 = 90. Code: 27 18 90. The code is 271890.",
+    "steps": [
+      "WKUHH shifted back 3 is THREE, so the first pair is 3 x 9 = 27.",
+      "101101 is 45, so the middle pair is 45 - 27 = 18.",
+      "THREE has 5 letters: 5 x 18 = 90. Code: 27 18 90."
+    ],
+    "hints": [
+      "Decode the word first. It names a number.",
+      "THREE is 3. Binary 101101 is 32 + 8 + 4 + 1.",
+      "Near the end: the code starts with 27 and ends with 0. Work out the middle three digits yourself."
+    ],
+    "estSeconds": 354,
+    "skills": [
+      "Multi-step deception"
+    ],
+    "tags": [
+      "multi-step deception",
+      "the deceiver"
+    ],
+    "tests": [
+      {
+        "code": "271890",
+        "correct": true
+      },
+      {
+        "code": "271891",
+        "correct": false
+      },
+      {
+        "code": "000000",
+        "correct": false
+      }
+    ],
+    "status": "published",
+    "version": 1,
+    "verification": {
+      "method": "exhaustive-solver",
+      "solutions": 1
+    }
+  }
+]
